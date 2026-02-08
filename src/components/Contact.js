@@ -119,7 +119,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         sx={{
-                          paddingBottom: "25px",
+                          pb: 3,
                           '& .MuiOutlinedInput-root': {
                             '& fieldset': {
                               borderColor: 'rgba(255, 255, 255, 0.2)',

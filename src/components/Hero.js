@@ -1,77 +1,8 @@
 import React from 'react';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
-import { styled, keyframes } from '@mui/material/styles';
 import SpeedIcon from '@mui/icons-material/Speed';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import BuildIcon from '@mui/icons-material/Build';
-
-const floatAnimation = keyframes`
-  0%, 100% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.02);
-  }
-`;
-
-const glowAnimation = keyframes`
-  0%, 100% {
-    opacity: 0.6;
-    filter: drop-shadow(0 0 10px rgba(0, 206, 209, 0.5));
-  }
-  50% {
-    opacity: 1;
-    filter: drop-shadow(0 0 25px rgba(0, 206, 209, 0.8));
-  }
-`;
-
-const motionLinesAnimation = keyframes`
-  0% {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-`;
-
-const CarIcon = styled(Box)(({ theme }) => ({
-  width: '100%',
-  maxWidth: '500px',
-  height: '250px',
-  margin: '0 auto',
-  position: 'relative',
-  animation: `${floatAnimation} 6s ease-in-out infinite`,
-  [theme.breakpoints.down('sm')]: {
-    maxWidth: '350px',
-    height: '180px',
-  },
-}));
-
-const CarSilhouette = styled('svg')(({ theme }) => ({
-  width: '100%',
-  height: '100%',
-  fill: 'none',
-  stroke: theme.palette.primary.main,
-  strokeWidth: 3.5,
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round',
-  animation: `${glowAnimation} 3s ease-in-out infinite`,
-}));
-
-const MotionLineGroup = styled('g')({
-  '& line': {
-    stroke: '#00CED1',
-    strokeWidth: 2,
-    strokeDasharray: '5,5',
-    opacity: 0.4,
-    animation: `${motionLinesAnimation} 2s ease-in-out infinite`,
-  },
-});
 
 const Hero = () => {
   return (
