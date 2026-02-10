@@ -1,11 +1,30 @@
 import { Box, Container, Typography, Grid, Stack, Paper } from '@mui/material';
+import { styled, keyframes } from '@mui/material/styles';
 import {
   Email as EmailIcon,
   Phone as PhoneIcon,
   LocationOn as LocationIcon,
 } from '@mui/icons-material';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const AnimatedContactCard = styled(Paper)(({ delay = 0, isVisible }) => ({
+  animation: isVisible ? `${fadeInUp} 0.6s ease-out ${delay}s both` : 'none',
+}));
 
 const Contact = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const contactInfo = [
     {
       icon: <EmailIcon />,
@@ -30,6 +49,7 @@ const Contact = () => {
   return (
     <Box
       id="contact"
+      ref={ref}
       sx={{
         py: { xs: 8, md: 12 },
         backgroundColor: 'background.default',
@@ -46,6 +66,9 @@ const Contact = () => {
               fontWeight: 700,
               textAlign: 'center',
               mb: 2,
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+              transition: 'all 0.8s ease-out',
             }}
           >
             Get In <Box component="span" sx={{ color: 'primary.main' }}>Touch</Box>
@@ -57,6 +80,9 @@ const Contact = () => {
               textAlign: 'center',
               maxWidth: '600px',
               fontWeight: 400,
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+              transition: 'all 0.8s ease-out 0.2s',
             }}
           >
             Ready to enhance your vehicle? Contact us today for a consultation and
@@ -68,8 +94,10 @@ const Contact = () => {
           <Grid item xs={12} md={6}>
             <Stack spacing={3}>
               {contactInfo.map((info, index) => (
-                <Paper
+                <AnimatedContactCard
                   key={index}
+                  delay={index * 0.15}
+                  isVisible={isVisible}
                   sx={{
                     p: 3,
                     backgroundColor: 'background.paper',
@@ -79,7 +107,8 @@ const Contact = () => {
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       borderColor: 'primary.main',
-                      transform: 'translateX(4px)',
+                      transform: 'translateX(8px) scale(1.02)',
+                      boxShadow: '0 8px 24px rgba(0, 206, 209, 0.15)',
                     },
                   }}
                 >
@@ -126,7 +155,7 @@ const Contact = () => {
                       </Typography>
                     </Box>
                   </Stack>
-                </Paper>
+                </AnimatedContactCard>
               ))}
             </Stack>
           </Grid>

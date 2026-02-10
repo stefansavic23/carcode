@@ -8,6 +8,7 @@ import {
   CardContent,
   Stack,
 } from '@mui/material';
+import { styled, keyframes } from '@mui/material/styles';
 import {
   Memory as MemoryIcon,
   Settings as SettingsIcon,
@@ -16,6 +17,22 @@ import {
   Build as BuildIcon,
   Analytics as AnalyticsIcon,
 } from '@mui/icons-material';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const AnimatedCard = styled(Card)(({ delay = 0, isVisible }) => ({
+  animation: isVisible ? `${fadeInUp} 0.6s ease-out ${delay}s both` : 'none',
+}));
 
 const services = [
   {
@@ -57,9 +74,12 @@ const services = [
 ];
 
 const Services = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1 });
+
   return (
     <Box
       id="services"
+      ref={ref}
       sx={{
         py: { xs: 8, md: 12 },
         backgroundColor: 'background.default',
@@ -76,6 +96,9 @@ const Services = () => {
               fontWeight: 700,
               textAlign: 'center',
               mb: 2,
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+              transition: 'all 0.8s ease-out',
             }}
           >
             Our <Box component="span" sx={{ color: 'primary.main' }}>Services</Box>
@@ -87,6 +110,9 @@ const Services = () => {
               textAlign: 'center',
               maxWidth: '600px',
               fontWeight: 400,
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+              transition: 'all 0.8s ease-out 0.2s',
             }}
           >
             Comprehensive car coding solutions tailored to enhance your vehicle's
@@ -97,7 +123,9 @@ const Services = () => {
         <Grid container spacing={4}>
           {services.map((service, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card
+              <AnimatedCard
+                delay={index * 0.1}
+                isVisible={isVisible}
                 sx={{
                   height: '100%',
                   backgroundColor: 'background.paper',
@@ -106,7 +134,7 @@ const Services = () => {
                   borderRadius: 3,
                   transition: 'all 0.3s ease',
                   '&:hover': {
-                    transform: 'translateY(-8px)',
+                    transform: 'translateY(-8px) scale(1.02)',
                     borderColor: 'primary.main',
                     boxShadow: '0 12px 40px rgba(0, 206, 209, 0.2)',
                   },
@@ -124,10 +152,15 @@ const Services = () => {
                       justifyContent: 'center',
                       mb: 3,
                       color: 'primary.main',
+                      transition: 'all 0.3s ease',
+                      '&:hover': {
+                        backgroundColor: 'rgba(0, 206, 209, 0.2)',
+                        transform: 'rotate(5deg) scale(1.1)',
+                      },
                     }}
                   >
                     {React.cloneElement(service.icon, {
-                      sx: { fontSize: '2.5rem' },
+                      sx: { fontSize: '2.5rem', transition: 'all 0.3s ease' },
                     })}
                   </Box>
                   <Typography
@@ -151,7 +184,7 @@ const Services = () => {
                     {service.description}
                   </Typography>
                 </CardContent>
-              </Card>
+              </AnimatedCard>
             </Grid>
           ))}
         </Grid>
