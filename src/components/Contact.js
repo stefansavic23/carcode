@@ -48,14 +48,14 @@ const Contact = () => {
     {
       icon: <PhoneIcon />,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      content: '+387 66 066 444',
+      link: 'tel:+38766066444',
     },
     {
       icon: <LocationIcon />,
       title: 'Location',
-      content: '123 Automotive Street, City, State 12345',
-      link: '#',
+      content: 'Ravnogorska 7, Derventa, 74400',
+      link: 'https://www.google.com/maps/place/Car+Code+Derventa/@44.9805284,17.9120042,1008m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475dcf004d7e3e97:0xd69aff1c84d93071!8m2!3d44.9805284!4d17.9120042!16s%2Fg%2F11xspcy60r?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D',
     },
   ];
 

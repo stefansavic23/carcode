@@ -127,7 +127,7 @@ const Footer = () => {
                   info@carcode.com
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  +1 (555) 123-4567
+                  +387 66 066 444
                 </Typography>
               </Stack>
             </Box>
