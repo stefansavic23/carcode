@@ -1,29 +1,42 @@
-import { Box, Container, Typography, Grid, Stack, Paper } from '@mui/material';
-import { styled, keyframes } from '@mui/material/styles';
+import { useState } from 'react';
+import {
+  Box,
+  Container,
+  Typography,
+  Grid,
+  TextField,
+  Button,
+  Stack,
+  Paper,
+} from '@mui/material';
 import {
   Email as EmailIcon,
   Phone as PhoneIcon,
   LocationOn as LocationIcon,
 } from '@mui/icons-material';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-
-const fadeInUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const AnimatedContactCard = styled(Paper)(({ delay = 0, isVisible }) => ({
-  animation: isVisible ? `${fadeInUp} 0.6s ease-out ${delay}s both` : 'none',
-}));
 
 const Contact = () => {
-  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log('Form submitted:', formData);
+    alert('Thank you for your message! We will get back to you soon.');
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
 
   const contactInfo = [
     {
@@ -49,7 +62,6 @@ const Contact = () => {
   return (
     <Box
       id="contact"
-      ref={ref}
       sx={{
         py: { xs: 8, md: 12 },
         backgroundColor: 'background.default',
@@ -66,9 +78,6 @@ const Contact = () => {
               fontWeight: 700,
               textAlign: 'center',
               mb: 2,
-              opacity: isVisible ? 1 : 0,
-              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              transition: 'all 0.8s ease-out',
             }}
           >
             Get In <Box component="span" sx={{ color: 'primary.main' }}>Touch</Box>
@@ -80,9 +89,6 @@ const Contact = () => {
               textAlign: 'center',
               maxWidth: '600px',
               fontWeight: 400,
-              opacity: isVisible ? 1 : 0,
-              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              transition: 'all 0.8s ease-out 0.2s',
             }}
           >
             Ready to enhance your vehicle? Contact us today for a consultation and
@@ -90,14 +96,141 @@ const Contact = () => {
           </Typography>
         </Stack>
 
-        <Grid container spacing={4} justifyContent="center">
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={8}>
+            <Paper
+              sx={{
+                p: { xs: 3, md: 4 },
+                backgroundColor: 'background.paper',
+                border: '1px solid',
+                borderColor: 'rgba(0, 206, 209, 0.1)',
+                borderRadius: 3,
+              }}
+            >
+              <form onSubmit={handleSubmit}>
+                <Stack spacing={3}>
+                  <Grid container>
+                    <Grid item xs={12} sm={12}>
+                      <TextField
+                        fullWidth
+                        label="Name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        sx={{
+                          pb: 3,
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(255, 255, 255, 0.2)',
+                            },
+                            '&:hover fieldset': {
+                              borderColor: 'primary.main',
+                            },
+                            '&.Mui-focused fieldset': {
+                              borderColor: 'primary.main',
+                            },
+                          },
+                        }}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={12}>
+                      <TextField
+                        fullWidth
+                        label="Email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(255, 255, 255, 0.2)',
+                            },
+                            '&:hover fieldset': {
+                              borderColor: 'primary.main',
+                            },
+                            '&.Mui-focused fieldset': {
+                              borderColor: 'primary.main',
+                            },
+                          },
+                        }}
+                      />
+                    </Grid>
+                  </Grid>
+                  <TextField
+                    fullWidth
+                    label="Phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    sx={{
+                      '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                          borderColor: 'rgba(255, 255, 255, 0.2)',
+                        },
+                        '&:hover fieldset': {
+                          borderColor: 'primary.main',
+                        },
+                        '&.Mui-focused fieldset': {
+                          borderColor: 'primary.main',
+                        },
+                      },
+                    }}
+                  />
+                  <TextField
+                    fullWidth
+                    label="Message"
+                    name="message"
+                    multiline
+                    rows={6}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    sx={{
+                      '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                          borderColor: 'rgba(255, 255, 255, 0.2)',
+                        },
+                        '&:hover fieldset': {
+                          borderColor: 'primary.main',
+                        },
+                        '&.Mui-focused fieldset': {
+                          borderColor: 'primary.main',
+                        },
+                      },
+                    }}
+                  />
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    size="large"
+                    sx={{
+                      backgroundColor: 'primary.main',
+                      color: 'background.default',
+                      py: 1.5,
+                      fontSize: '1.1rem',
+                      '&:hover': {
+                        backgroundColor: 'primary.dark',
+                        transform: 'translateY(-2px)',
+                        boxShadow: '0 8px 20px rgba(0, 206, 209, 0.3)',
+                      },
+                      transition: 'all 0.3s ease',
+                    }}
+                  >
+                    Send Message
+                  </Button>
+                </Stack>
+              </form>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} md={4}>
             <Stack spacing={3}>
               {contactInfo.map((info, index) => (
-                <AnimatedContactCard
+                <Paper
                   key={index}
-                  delay={index * 0.15}
-                  isVisible={isVisible}
                   sx={{
                     p: 3,
                     backgroundColor: 'background.paper',
@@ -107,8 +240,7 @@ const Contact = () => {
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       borderColor: 'primary.main',
-                      transform: 'translateX(8px) scale(1.02)',
-                      boxShadow: '0 8px 24px rgba(0, 206, 209, 0.15)',
+                      transform: 'translateX(4px)',
                     },
                   }}
                 >
@@ -155,7 +287,7 @@ const Contact = () => {
                       </Typography>
                     </Box>
                   </Stack>
-                </AnimatedContactCard>
+                </Paper>
               ))}
             </Stack>
           </Grid>
