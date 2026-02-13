@@ -15,35 +15,9 @@ const Footer = () => {
         <Stack
           direction={{ xs: 'column', md: 'row' }}
           spacing={2}
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems={{ xs: 'center', md: 'flex-start' }}
         >
-          <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-            <Typography
-              variant="h5"
-              sx={{
-                fontWeight: 700,
-                mb: 1,
-              }}
-            >
-              <Box component="span" sx={{ color: 'secondary.main' }}>
-                CAR
-              </Box>
-              <Box component="span" sx={{ color: 'primary.main' }}>
-                CODE
-              </Box>
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'text.secondary',
-                fontWeight: 300,
-                letterSpacing: '0.1em',
-              }}
-            >
-              PROFESSIONAL CARCODING
-            </Typography>
-          </Box>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={4}

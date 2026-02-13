@@ -58,7 +58,6 @@ const Hero = () => {
         overflow: 'hidden',
         pt: 10,
         pb: 6,
-        background: 'linear-gradient(180deg, #000000 0%, #0A0A0A 100%)',
         '&::before': {
           content: '""',
           position: 'absolute',
@@ -66,12 +65,56 @@ const Hero = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.1) 0%, transparent 70%)',
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.8) 100%)',
           pointerEvents: 'none',
+          zIndex: 1,
+        },
+        '&::after': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.06) 0%, transparent 60%)',
+          pointerEvents: 'none',
+          zIndex: 1,
         },
       }}
     >
-      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          minWidth: '100%',
+          minHeight: '100%',
+          width: 'auto',
+          height: 'auto',
+          transform: 'translate(-50%, -50%)',
+          objectFit: 'cover',
+          zIndex: 0,
+        }}
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <Box
+        sx={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: { xs: '100%', sm: '100%', md: '100%' },
+          height: { xs: '100px', sm: '140px', md: '160px' },
+          background: 'radial-gradient(ellipse 100% 100% at 0% 100%, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 40%, transparent 70%)',
+          pointerEvents: 'none',
+          zIndex: 1,
+        }}
+      />
+      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
         <Stack spacing={4} alignItems="center" textAlign="center">
           <AnimatedBox delay={0.2}>
             <Box>
