@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu"
+  },
+  "hero": {
+    "tagline": "PROFESSIONAL CARCODING",
+    "headline": "Unlock your vehicle's true potential with professional ECU tuning and advanced car coding services. Experience enhanced performance, efficiency, and customization.",
+    "getStarted": "Get Started",
+    "ourServices": "Our Services",
+    "performance": "Performance",
+    "performanceDesc": "Enhanced power & torque",
+    "efficiency": "Efficiency",
+    "efficiencyDesc": "Optimized fuel economy",
+    "customization": "Customization",
+    "customizationDesc": "Tailored to your needs"
+  },
+  "services": {
+    "titlePrefix": "Our",
+    "titleHighlight": "Services",
+    "title": "Our Services",
+    "subtitle": "Comprehensive car coding solutions tailored to enhance your vehicle's performance, efficiency, and functionality.",
+    "ecuRemapping": {
+      "title": "ECU Remapping",
+      "description": "Professional engine control unit remapping to unlock hidden performance and optimize your vehicle's power output."
+    },
+    "chipTuning": {
+      "title": "Chip Tuning",
+      "description": "Advanced chip tuning services to enhance your car's performance, fuel efficiency, and driving experience."
+    },
+    "customCoding": {
+      "title": "Custom Coding",
+      "description": "Tailored coding solutions for your specific vehicle model, including feature activation and customization."
+    },
+    "securityUpdates": {
+      "title": "Security Updates",
+      "description": "Keep your vehicle's software up-to-date with the latest security patches and performance improvements."
+    },
+    "diagnosticServices": {
+      "title": "Diagnostic Services",
+      "description": "Comprehensive diagnostic analysis to identify and resolve issues with your vehicle's electronic systems."
+    },
+    "performanceAnalysis": {
+      "title": "Performance Analysis",
+      "description": "Detailed performance analysis and optimization recommendations based on your driving patterns and needs."
+    }
+  },
+  "about": {
+    "title": "Why Choose CARCODE?",
+    "titleHighlight": "CARCODE",
+    "subtitle": "We are dedicated to providing the highest quality car coding and ECU tuning services. Our team of experts combines technical expertise with a passion for automotive excellence.",
+    "feature1": "Professional-grade diagnostic equipment",
+    "feature2": "Years of industry experience",
+    "feature3": "Support for all major vehicle brands",
+    "feature4": "Safe and reversible modifications",
+    "feature5": "Comprehensive warranty coverage",
+    "feature6": "Personalized service approach",
+    "stat1Label": "Vehicles Tuned",
+    "stat2Label": "Customer Satisfaction",
+    "stat3Label": "Years Experience",
+    "stat4Label": "Support Available"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "titleHighlight": "Touch",
+    "subtitle": "Ready to enhance your vehicle? Contact us today for a consultation and discover how we can help unlock your car's potential.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "successMessage": "Thank you for your message! We will get back to you soon.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "emailValue": "info@carcode.com",
+    "phoneValue": "+387 66 066 444",
+    "locationValue": "Ravnogorska 7, Derventa, 74400"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

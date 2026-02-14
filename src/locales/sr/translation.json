@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Početna",
+    "services": "Usluge",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "openMenu": "Otvori meni"
+  },
+  "hero": {
+    "tagline": "PROFESIONALNI CARCODING",
+    "headline": "Otključaj puni potencijal svog vozila uz profesionalno ECU podešavanje i napredne usluge car codinga. Oživi poboljšane performanse, efikasnost i personalizaciju.",
+    "getStarted": "Počni",
+    "ourServices": "Naše usluge",
+    "performance": "Performanse",
+    "performanceDesc": "Povećana snaga i obrtni moment",
+    "efficiency": "Efikasnost",
+    "efficiencyDesc": "Optimizovana potrošnja goriva",
+    "customization": "Prilagođavanje",
+    "customizationDesc": "Prilagođeno vašim potrebama"
+  },
+  "services": {
+    "titlePrefix": "Naše",
+    "titleHighlight": "usluge",
+    "title": "Naše usluge",
+    "subtitle": "Sveobuhvatna car coding rešenja prilagođena za poboljšanje performansi, efikasnosti i funkcionalnosti vašeg vozila.",
+    "ecuRemapping": {
+      "title": "ECU Remapping",
+      "description": "Profesionalno podešavanje upravljačke jedinice motora za otključavanje skrivenih performansi i optimizaciju snage vašeg vozila."
+    },
+    "chipTuning": {
+      "title": "Chip Tuning",
+      "description": "Napredne usluge chip tuninga za poboljšanje performansi, efikasnosti goriva i vožnje vašeg automobila."
+    },
+    "customCoding": {
+      "title": "Custom Coding",
+      "description": "Prilagođena coding rešenja za vaš model vozila, uključujući aktivaciju funkcija i personalizaciju."
+    },
+    "securityUpdates": {
+      "title": "Bezbednosna ažuriranja",
+      "description": "Održavajte softver vozila ažuriran uz najnovije bezbednosne zakrpe i poboljšanja performansi."
+    },
+    "diagnosticServices": {
+      "title": "Dijagnostičke usluge",
+      "description": "Sveobuhvatna dijagnostička analiza za prepoznavanje i rešavanje problema sa elektronskim sistemima vašeg vozila."
+    },
+    "performanceAnalysis": {
+      "title": "Analiza performansi",
+      "description": "Detaljna analiza performansi i preporuke za optimizaciju na osnovu vaših vozačkih navika i potreba."
+    }
+  },
+  "about": {
+    "title": "Zašto izabrati CARCODE?",
+    "titleHighlight": "CARCODE",
+    "subtitle": "Posvećeni smo pružanju najvišeg kvaliteta car coding i ECU tuning usluga. Naš tim stručnjaka kombinuje tehničku ekspertizu sa strašću prema automobilskoj izvrsnosti.",
+    "feature1": "Profesionalna dijagnostička oprema",
+    "feature2": "Godine iskustva u industriji",
+    "feature3": "Podrška za sve glavne marke vozila",
+    "feature4": "Sigurne i reverzibilne modifikacije",
+    "feature5": "Sveobuhvatno pokriće garancije",
+    "feature6": "Personalizovani pristup usluzi",
+    "stat1Label": "Podešenih vozila",
+    "stat2Label": "Zadovoljstvo kupaca",
+    "stat3Label": "Godina iskustva",
+    "stat4Label": "Podrška dostupna"
+  },
+  "contact": {
+    "title": "Kontaktirajte nas",
+    "titleHighlight": "Touch",
+    "subtitle": "Spremni da unapredite svoje vozilo? Kontaktirajte nas danas za konsultaciju i otkrijte kako možemo pomoći da otključate puni potencijal vašeg automobila.",
+    "form": {
+      "name": "Ime",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Poruka",
+      "send": "Pošalji poruku"
+    },
+    "successMessage": "Hvala na poruci! Javićemo vam se uskoro.",
+    "email": "Email",
+    "phone": "Telefon",
+    "location": "Lokacija",
+    "emailValue": "info@carcode.com",
+    "phoneValue": "+387 66 066 444",
+    "locationValue": "Ravnogorska 7, Derventa, 74400"
+  },
+  "footer": {
+    "quickLinks": "Brzi linkovi",
+    "contact": "Kontakt",
+    "rights": "Sva prava zadržana."
+  }
+}

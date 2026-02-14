@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 import SpeedIcon from '@mui/icons-material/Speed';
@@ -46,6 +47,8 @@ const AnimatedIconBox = styled(Box)(({ delay = 0 }) => ({
 }));
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="home"
@@ -149,7 +152,7 @@ const Hero = () => {
                   fontSize: { xs: '0.9rem', sm: '1rem', md: '1.2rem' },
                 }}
               >
-                PROFESSIONAL CARCODING
+                {t('hero.tagline')}
               </Typography>
             </Box>
           </AnimatedBox>
@@ -165,9 +168,7 @@ const Hero = () => {
                 fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' },
               }}
             >
-              Unlock your vehicle's true potential with professional ECU tuning and
-              advanced car coding services. Experience enhanced performance, efficiency,
-              and customization.
+              {t('hero.headline')}
             </Typography>
           </AnimatedBox>
 
@@ -195,7 +196,7 @@ const Hero = () => {
                   transition: 'all 0.3s ease',
                 }}
               >
-                Get Started
+                {t('hero.getStarted')}
               </Button>
               <Button
                 variant="outlined"
@@ -215,7 +216,7 @@ const Hero = () => {
                   transition: 'all 0.3s ease',
                 }}
               >
-                Our Services
+                {t('hero.ourServices')}
               </Button>
             </Stack>
           </AnimatedBox>
@@ -239,10 +240,10 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  Performance
+                  {t('hero.performance')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Enhanced power & torque
+                  {t('hero.performanceDesc')}
                 </Typography>
               </AnimatedIconBox>
               <AnimatedIconBox delay={1.2} sx={{ textAlign: 'center', flex: 1 }}>
@@ -258,10 +259,10 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  Efficiency
+                  {t('hero.efficiency')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Optimized fuel economy
+                  {t('hero.efficiencyDesc')}
                 </Typography>
               </AnimatedIconBox>
               <AnimatedIconBox delay={1.4} sx={{ textAlign: 'center', flex: 1 }}>
@@ -277,10 +278,10 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  Customization
+                  {t('hero.customization')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Tailored to your needs
+                  {t('hero.customizationDesc')}
                 </Typography>
               </AnimatedIconBox>
             </Stack>

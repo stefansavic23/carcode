@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Box, Container, Typography, Stack, Link } from '@mui/material';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{
@@ -32,7 +35,7 @@ const Footer = () => {
                   color: 'text.primary',
                 }}
               >
-                Quick Links
+                {t('footer.quickLinks')}
               </Typography>
               <Stack spacing={0.5}>
                 <Link
@@ -45,7 +48,7 @@ const Footer = () => {
                     },
                   }}
                 >
-                  Home
+                  {t('nav.home')}
                 </Link>
                 <Link
                   href="#services"
@@ -57,7 +60,7 @@ const Footer = () => {
                     },
                   }}
                 >
-                  Services
+                  {t('nav.services')}
                 </Link>
                 <Link
                   href="#about"
@@ -69,7 +72,7 @@ const Footer = () => {
                     },
                   }}
                 >
-                  About
+                  {t('nav.about')}
                 </Link>
                 <Link
                   href="#contact"
@@ -81,7 +84,7 @@ const Footer = () => {
                     },
                   }}
                 >
-                  Contact
+                  {t('nav.contact')}
                 </Link>
               </Stack>
             </Box>
@@ -94,7 +97,7 @@ const Footer = () => {
                   color: 'text.primary',
                 }}
               >
-                Contact
+                {t('footer.contact')}
               </Typography>
               <Stack spacing={0.5}>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
@@ -117,7 +120,7 @@ const Footer = () => {
           }}
         >
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            © {new Date().getFullYear()} CARCODE. All rights reserved.
+            © {new Date().getFullYear()} CARCODE. {t('footer.rights')}
           </Typography>
         </Box>
       </Container>

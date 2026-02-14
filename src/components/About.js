@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Box,
   Container,
@@ -41,24 +42,19 @@ const AnimatedStat = styled(Paper)(({ delay = 0, isVisible }) => ({
   animation: isVisible ? `${fadeInRight} 0.6s ease-out ${delay}s both` : 'none',
 }));
 
-const features = [
-  'Professional-grade diagnostic equipment',
-  'Years of industry experience',
-  'Support for all major vehicle brands',
-  'Safe and reversible modifications',
-  'Comprehensive warranty coverage',
-  'Personalized service approach',
-];
-
-const stats = [
-  { number: '5000+', label: 'Vehicles Tuned' },
-  { number: '98%', label: 'Customer Satisfaction' },
-  { number: '10+', label: 'Years Experience' },
-  { number: '24/7', label: 'Support Available' },
-];
+const featureKeys = ['feature1', 'feature2', 'feature3', 'feature4', 'feature5', 'feature6'];
+const statKeys = ['stat1', 'stat2', 'stat3', 'stat4'];
+const statNumbers = ['5000+', '98%', '10+', '24/7'];
 
 const About = () => {
+  const { t } = useTranslation();
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
+  const features = featureKeys.map((key) => t(`about.${key}`));
+  const stats = statKeys.map((key, index) => ({
+    number: statNumbers[index],
+    label: t(`about.${key}Label`),
+  }));
 
   return (
     <Box
@@ -85,7 +81,7 @@ const About = () => {
                   transition: 'all 0.8s ease-out',
                 }}
               >
-                Why Choose <Box component="span" sx={{ color: 'primary.main' }}>CARCODE</Box>?
+                {t('about.title')}
               </Typography>
               <Typography
                 variant="h6"
@@ -98,9 +94,7 @@ const About = () => {
                   transition: 'all 0.8s ease-out 0.2s',
                 }}
               >
-                We are dedicated to providing the highest quality car coding and ECU
-                tuning services. Our team of experts combines technical expertise with
-                a passion for automotive excellence.
+                {t('about.subtitle')}
               </Typography>
               <Stack spacing={2} sx={{ mt: 2 }}>
                 {features.map((feature, index) => (

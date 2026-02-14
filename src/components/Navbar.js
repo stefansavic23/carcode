@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   AppBar,
   Toolbar,
@@ -15,6 +16,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -34,6 +36,7 @@ function ElevationScroll(props) {
 }
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -41,10 +44,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.contact'), href: '#contact' },
   ];
 
   const drawer = (
@@ -79,6 +82,9 @@ const Navbar = () => {
           CODE
         </Box>
       </Typography>
+      <Box sx={{ mb: 2 }}>
+        <LanguageSwitcher />
+      </Box>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
@@ -137,9 +143,10 @@ const Navbar = () => {
                 </Button>
               ))}
             </Box>
+            <LanguageSwitcher />
             <IconButton
               color="inherit"
-              aria-label="open drawer"
+              aria-label={t('nav.openMenu')}
               edge="start"
               onClick={handleDrawerToggle}
               sx={{ display: { md: 'none' }, color: 'primary.main' }}

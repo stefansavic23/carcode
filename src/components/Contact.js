@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Box,
   Container,
@@ -16,6 +17,7 @@ import {
 } from '@mui/icons-material';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -34,27 +36,27 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    alert(t('contact.successMessage'));
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
   const contactInfo = [
     {
       icon: <EmailIcon />,
-      title: 'Email',
-      content: 'info@carcode.com',
+      title: t('contact.email'),
+      content: t('contact.emailValue'),
       link: 'mailto:info@carcode.com',
     },
     {
       icon: <PhoneIcon />,
-      title: 'Phone',
-      content: '+387 66 066 444',
+      title: t('contact.phone'),
+      content: t('contact.phoneValue'),
       link: 'tel:+38766066444',
     },
     {
       icon: <LocationIcon />,
-      title: 'Location',
-      content: 'Ravnogorska 7, Derventa, 74400',
+      title: t('contact.location'),
+      content: t('contact.locationValue'),
       link: 'https://www.google.com/maps/place/Car+Code+Derventa/@44.9805284,17.9120042,1008m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475dcf004d7e3e97:0xd69aff1c84d93071!8m2!3d44.9805284!4d17.9120042!16s%2Fg%2F11xspcy60r?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D',
     },
   ];
@@ -80,7 +82,7 @@ const Contact = () => {
               mb: 2,
             }}
           >
-            Get In <Box component="span" sx={{ color: 'primary.main' }}>Touch</Box>
+            {t('contact.title')}
           </Typography>
           <Typography
             variant="h6"
@@ -91,8 +93,7 @@ const Contact = () => {
               fontWeight: 400,
             }}
           >
-            Ready to enhance your vehicle? Contact us today for a consultation and
-            discover how we can help unlock your car's potential.
+            {t('contact.subtitle')}
           </Typography>
         </Stack>
 
@@ -113,7 +114,7 @@ const Contact = () => {
                     <Grid item xs={12} sm={12}>
                       <TextField
                         fullWidth
-                        label="Name"
+                        label={t('contact.form.name')}
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -137,7 +138,7 @@ const Contact = () => {
                     <Grid item xs={12} sm={12}>
                       <TextField
                         fullWidth
-                        label="Email"
+                        label={t('contact.form.email')}
                         name="email"
                         type="email"
                         value={formData.email}
@@ -161,7 +162,7 @@ const Contact = () => {
                   </Grid>
                   <TextField
                     fullWidth
-                    label="Phone"
+                    label={t('contact.form.phone')}
                     name="phone"
                     type="tel"
                     value={formData.phone}
@@ -182,7 +183,7 @@ const Contact = () => {
                   />
                   <TextField
                     fullWidth
-                    label="Message"
+                    label={t('contact.form.message')}
                     name="message"
                     multiline
                     rows={6}
@@ -220,7 +221,7 @@ const Contact = () => {
                       transition: 'all 0.3s ease',
                     }}
                   >
-                    Send Message
+                    {t('contact.form.send')}
                   </Button>
                 </Stack>
               </form>

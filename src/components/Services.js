@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Box,
   Container,
@@ -34,47 +35,33 @@ const AnimatedCard = styled(Card)(({ delay = 0, isVisible }) => ({
   animation: isVisible ? `${fadeInUp} 0.6s ease-out ${delay}s both` : 'none',
 }));
 
-const services = [
-  {
-    icon: <SpeedIcon />,
-    title: 'ECU Remapping',
-    description:
-      'Professional engine control unit remapping to unlock hidden performance and optimize your vehicle\'s power output.',
-  },
-  {
-    icon: <MemoryIcon />,
-    title: 'Chip Tuning',
-    description:
-      'Advanced chip tuning services to enhance your car\'s performance, fuel efficiency, and driving experience.',
-  },
-  {
-    icon: <SettingsIcon />,
-    title: 'Custom Coding',
-    description:
-      'Tailored coding solutions for your specific vehicle model, including feature activation and customization.',
-  },
-  {
-    icon: <SecurityIcon />,
-    title: 'Security Updates',
-    description:
-      'Keep your vehicle\'s software up-to-date with the latest security patches and performance improvements.',
-  },
-  {
-    icon: <BuildIcon />,
-    title: 'Diagnostic Services',
-    description:
-      'Comprehensive diagnostic analysis to identify and resolve issues with your vehicle\'s electronic systems.',
-  },
-  {
-    icon: <AnalyticsIcon />,
-    title: 'Performance Analysis',
-    description:
-      'Detailed performance analysis and optimization recommendations based on your driving patterns and needs.',
-  },
+const serviceKeys = [
+  'ecuRemapping',
+  'chipTuning',
+  'customCoding',
+  'securityUpdates',
+  'diagnosticServices',
+  'performanceAnalysis',
+];
+
+const serviceIcons = [
+  <SpeedIcon />,
+  <MemoryIcon />,
+  <SettingsIcon />,
+  <SecurityIcon />,
+  <BuildIcon />,
+  <AnalyticsIcon />,
 ];
 
 const Services = () => {
+  const { t } = useTranslation();
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.1 });
+
+  const services = serviceKeys.map((key, index) => ({
+    icon: serviceIcons[index],
+    title: t(`services.${key}.title`),
+    description: t(`services.${key}.description`),
+  }));
 
   return (
     <Box
@@ -101,7 +88,7 @@ const Services = () => {
               transition: 'all 0.8s ease-out',
             }}
           >
-            Our <Box component="span" sx={{ color: 'primary.main' }}>Services</Box>
+            {t('services.titlePrefix')} <Box component="span" sx={{ color: 'primary.main' }}>{t('services.titleHighlight')}</Box>
           </Typography>
           <Typography
             variant="h6"
@@ -115,14 +102,13 @@ const Services = () => {
               transition: 'all 0.8s ease-out 0.2s',
             }}
           >
-            Comprehensive car coding solutions tailored to enhance your vehicle's
-            performance, efficiency, and functionality.
+            {t('services.subtitle')}
           </Typography>
         </Stack>
 
         <Grid container spacing={4}>
           {services.map((service, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid item xs={12} sm={6} md={4} key={serviceKeys[index]}>
               <AnimatedCard
                 delay={index * 0.1}
                 isVisible={isVisible}
