@@ -10,14 +10,12 @@ import {
   Stack,
 } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
-import {
-  Memory as MemoryIcon,
-  Settings as SettingsIcon,
-  Speed as SpeedIcon,
-  Security as SecurityIcon,
-  Build as BuildIcon,
-  Analytics as AnalyticsIcon,
-} from '@mui/icons-material';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import AirplayIcon from '@mui/icons-material/Airplay';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import ShieldIcon from '@mui/icons-material/Shield';
+import SpeedIcon from '@mui/icons-material/Speed';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const fadeInUp = keyframes`
@@ -45,12 +43,12 @@ const serviceKeys = [
 ];
 
 const serviceIcons = [
+  <NavigationIcon />,
+  <VideoLibraryIcon />,
+  <AirplayIcon />,
+  <LightbulbIcon />,
+  <ShieldIcon />,
   <SpeedIcon />,
-  <MemoryIcon />,
-  <SettingsIcon />,
-  <SecurityIcon />,
-  <BuildIcon />,
-  <AnalyticsIcon />,
 ];
 
 const Services = () => {

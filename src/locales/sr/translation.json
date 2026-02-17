@@ -24,27 +24,27 @@
     "title": "Naše usluge",
     "subtitle": "Sveobuhvatna car coding rešenja prilagođena za poboljšanje performansi, efikasnosti i funkcionalnosti vašeg vozila.",
     "ecuRemapping": {
-      "title": "ECU Remapping",
+      "title": "Navigacija / Mape",
       "description": "Profesionalno podešavanje upravljačke jedinice motora za otključavanje skrivenih performansi i optimizaciju snage vašeg vozila."
     },
     "chipTuning": {
-      "title": "Chip Tuning",
+      "title": "Multimedija / Infotainment",
       "description": "Napredne usluge chip tuninga za poboljšanje performansi, efikasnosti goriva i vožnje vašeg automobila."
     },
     "customCoding": {
-      "title": "Custom Coding",
+      "title": "Virtuelne Table / Prikazi",
       "description": "Prilagođena coding rešenja za vaš model vozila, uključujući aktivaciju funkcija i personalizaciju."
     },
     "securityUpdates": {
-      "title": "Bezbednosna ažuriranja",
+      "title": "Osvetljenje",
       "description": "Održavajte softver vozila ažuriran uz najnovije bezbednosne zakrpe i poboljšanja performansi."
     },
     "diagnosticServices": {
-      "title": "Dijagnostičke usluge",
+      "title": "Bezbednost / Komfor",
       "description": "Sveobuhvatna dijagnostička analiza za prepoznavanje i rešavanje problema sa elektronskim sistemima vašeg vozila."
     },
     "performanceAnalysis": {
-      "title": "Analiza performansi",
+      "title": "Motor / Performanse",
       "description": "Detaljna analiza performansi i preporuke za optimizaciju na osnovu vaših vozačkih navika i potreba."
     }
   },

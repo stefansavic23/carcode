@@ -24,27 +24,27 @@
     "title": "Our Services",
     "subtitle": "Comprehensive car coding solutions tailored to enhance your vehicle's performance, efficiency, and functionality.",
     "ecuRemapping": {
-      "title": "ECU Remapping",
+      "title": "Navigation / Maps",
       "description": "Professional engine control unit remapping to unlock hidden performance and optimize your vehicle's power output."
     },
     "chipTuning": {
-      "title": "Chip Tuning",
+      "title": "Multimedia / Infotainment",
       "description": "Advanced chip tuning services to enhance your car's performance, fuel efficiency, and driving experience."
     },
     "customCoding": {
-      "title": "Custom Coding",
+      "title": "Virtual Boards / Views",
       "description": "Tailored coding solutions for your specific vehicle model, including feature activation and customization."
     },
     "securityUpdates": {
-      "title": "Security Updates",
+      "title": "Lighting",
       "description": "Keep your vehicle's software up-to-date with the latest security patches and performance improvements."
     },
     "diagnosticServices": {
-      "title": "Diagnostic Services",
+      "title": "Safety / Comfort",
       "description": "Comprehensive diagnostic analysis to identify and resolve issues with your vehicle's electronic systems."
     },
     "performanceAnalysis": {
-      "title": "Performance Analysis",
+      "title": "Engine / Performance",
       "description": "Detailed performance analysis and optimization recommendations based on your driving patterns and needs."
     }
   },
