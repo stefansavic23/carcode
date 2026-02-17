@@ -110,7 +110,7 @@ const Hero = () => {
           position: 'absolute',
           bottom: 0,
           left: 0,
-          width: { xs: '100%', sm: '100%', md: '100%' },
+
           height: { xs: '100px', sm: '140px', md: '160px' },
           background: 'radial-gradient(ellipse 100% 100% at 0% 100%, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 40%, transparent 70%)',
           pointerEvents: 'none',
