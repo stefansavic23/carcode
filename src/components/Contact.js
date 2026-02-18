@@ -97,201 +97,70 @@ const Contact = () => {
           </Typography>
         </Stack>
 
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={8}>
-            <Paper
-              sx={{
-                p: { xs: 3, md: 4 },
-                backgroundColor: 'background.paper',
-                border: '1px solid',
-                borderColor: 'rgba(0, 206, 209, 0.1)',
-                borderRadius: 3,
-              }}
-            >
-              <form onSubmit={handleSubmit}>
-                <Stack spacing={3}>
-                  <Grid container>
-                    <Grid item xs={12} sm={12}>
-                      <TextField
-                        fullWidth
-                        label={t('contact.form.name')}
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        sx={{
-                          pb: 3,
-                          '& .MuiOutlinedInput-root': {
-                            '& fieldset': {
-                              borderColor: 'rgba(255, 255, 255, 0.2)',
-                            },
-                            '&:hover fieldset': {
-                              borderColor: 'primary.main',
-                            },
-                            '&.Mui-focused fieldset': {
-                              borderColor: 'primary.main',
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={12}>
-                      <TextField
-                        fullWidth
-                        label={t('contact.form.email')}
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        sx={{
-                          '& .MuiOutlinedInput-root': {
-                            '& fieldset': {
-                              borderColor: 'rgba(255, 255, 255, 0.2)',
-                            },
-                            '&:hover fieldset': {
-                              borderColor: 'primary.main',
-                            },
-                            '&.Mui-focused fieldset': {
-                              borderColor: 'primary.main',
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                  </Grid>
-                  <TextField
-                    fullWidth
-                    label={t('contact.form.phone')}
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
+        <Grid container alignContent={"center"} justifyContent={"center"}>
+          <Stack spacing={3}>
+            {contactInfo.map((info, index) => (
+              <Paper
+                key={index}
+                sx={{
+                  p: 3,
+                  backgroundColor: 'background.paper',
+                  border: '1px solid',
+                  borderColor: 'rgba(0, 206, 209, 0.1)',
+                  borderRadius: 2,
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    borderColor: 'primary.main',
+                    transform: 'translateX(4px)',
+                  },
+                }}
+              >
+                <Stack direction="row" spacing={2} alignItems="flex-start">
+                  <Box
                     sx={{
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'rgba(255, 255, 255, 0.2)',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'primary.main',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'primary.main',
-                        },
-                      },
-                    }}
-                  />
-                  <TextField
-                    fullWidth
-                    label={t('contact.form.message')}
-                    name="message"
-                    multiline
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    sx={{
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'rgba(255, 255, 255, 0.2)',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'primary.main',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'primary.main',
-                        },
-                      },
-                    }}
-                  />
-                  <Button
-                    type="submit"
-                    variant="contained"
-                    size="large"
-                    sx={{
-                      backgroundColor: 'primary.main',
-                      color: 'background.default',
-                      py: 1.5,
-                      fontSize: '1.1rem',
-                      '&:hover': {
-                        backgroundColor: 'primary.dark',
-                        transform: 'translateY(-2px)',
-                        boxShadow: '0 8px 20px rgba(0, 206, 209, 0.3)',
-                      },
-                      transition: 'all 0.3s ease',
+                      width: 48,
+                      height: 48,
+                      borderRadius: 1.5,
+                      backgroundColor: 'rgba(0, 206, 209, 0.1)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'primary.main',
+                      flexShrink: 0,
                     }}
                   >
-                    {t('contact.form.send')}
-                  </Button>
-                </Stack>
-              </form>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Stack spacing={3}>
-              {contactInfo.map((info, index) => (
-                <Paper
-                  key={index}
-                  sx={{
-                    p: 3,
-                    backgroundColor: 'background.paper',
-                    border: '1px solid',
-                    borderColor: 'rgba(0, 206, 209, 0.1)',
-                    borderRadius: 2,
-                    transition: 'all 0.3s ease',
-                    '&:hover': {
-                      borderColor: 'primary.main',
-                      transform: 'translateX(4px)',
-                    },
-                  }}
-                >
-                  <Stack direction="row" spacing={2} alignItems="flex-start">
-                    <Box
+                    {info.icon}
+                  </Box>
+                  <Box>
+                    <Typography
+                      variant="h6"
                       sx={{
-                        width: 48,
-                        height: 48,
-                        borderRadius: 1.5,
-                        backgroundColor: 'rgba(0, 206, 209, 0.1)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'primary.main',
-                        flexShrink: 0,
+                        fontWeight: 600,
+                        mb: 0.5,
+                        color: 'text.primary',
                       }}
                     >
-                      {info.icon}
-                    </Box>
-                    <Box>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontWeight: 600,
-                          mb: 0.5,
-                          color: 'text.primary',
-                        }}
-                      >
-                        {info.title}
-                      </Typography>
-                      <Typography
-                        component="a"
-                        href={info.link}
-                        variant="body2"
-                        sx={{
-                          color: 'text.secondary',
-                          textDecoration: 'none',
-                          '&:hover': {
-                            color: 'primary.main',
-                          },
-                        }}
-                      >
-                        {info.content}
-                      </Typography>
-                    </Box>
-                  </Stack>
-                </Paper>
-              ))}
-            </Stack>
-          </Grid>
+                      {info.title}
+                    </Typography>
+                    <Typography
+                      component="a"
+                      href={info.link}
+                      variant="body2"
+                      sx={{
+                        color: 'text.secondary',
+                        textDecoration: 'none',
+                        '&:hover': {
+                          color: 'primary.main',
+                        },
+                      }}
+                    >
+                      {info.content}
+                    </Typography>
+                  </Box>
+                </Stack>
+              </Paper>
+            ))}
+          </Stack>
         </Grid>
       </Container>
     </Box>
