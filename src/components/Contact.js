@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   Box,
   Container,
   Typography,
   Grid,
-  TextField,
-  Button,
   Stack,
   Paper,
 } from '@mui/material';
@@ -18,27 +15,6 @@ import {
 
 const Contact = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert(t('contact.successMessage'));
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
 
   const contactInfo = [
     {
