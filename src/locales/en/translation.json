@@ -23,7 +23,19 @@
     "title": "Vehicle Coding",
     "description": "CarPlay/Android Auto activation, updating and unlocking new maps on multimedia, additional functions and personalization of your vehicle according to your needs.",
     "button": "View Offer",
-    "imageAlt": "Vehicle Coding"
+    "imageAlt": "Vehicle Coding",
+    "label2": "Our Services",
+    "title2": "Virtual Dashboards",
+    "description2": "Activation and configuration of virtual dashboards, digital displays and head-up display systems.",
+    "imageAlt2": "Virtual dashboards",
+    "label3": "Our Services",
+    "title3": "Multimedia / Infotainment",
+    "description3": "CarPlay/Android Auto activation, audio system configuration, adding new multimedia features and infotainment system personalization.",
+    "imageAlt3": "Virtual dashboards",
+    "label4": "Our Services",
+    "title4": "Lighting",
+    "description4": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting.",
+    "imageAlt4": "Lighting"
   },
   "services": {
     "titlePrefix": "Our",

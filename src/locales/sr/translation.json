@@ -23,7 +23,11 @@
     "title": "Kodiranje vozila",
     "description": "Aktivacija CarPlay/Android Auto, ažuriranje i otključavanje novih mapa na multimediji, dodatne funkcije i personalizacija vašeg vozila prema vašim potrebama.",
     "button": "Pogledaj ponudu",
-    "imageAlt": "Kodiranje vozila"
+    "imageAlt": "Kodiranje vozila",
+    "label2": "Naše usluge",
+    "title2": "Virtuelne Table",
+    "description2": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema.",
+    "imageAlt2": "Virtuelne table"
   },
   "services": {
     "titlePrefix": "Naše",
