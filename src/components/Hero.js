@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 import SpeedIcon from '@mui/icons-material/Speed';
@@ -178,9 +179,10 @@ const Hero = () => {
               sx={{ mt: 2 }}
             >
               <Button
+                component={Link}
+                to="/#contact"
                 variant="contained"
                 size="large"
-                href="#contact"
                 sx={{
                   backgroundColor: 'primary.main',
                   color: 'background.default',
@@ -198,9 +200,10 @@ const Hero = () => {
                 {t('hero.getStarted')}
               </Button>
               <Button
+                component={Link}
+                to="/services"
                 variant="outlined"
                 size="large"
-                href="#services"
                 sx={{
                   borderColor: 'primary.main',
                   color: 'primary.main',

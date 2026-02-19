@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link as RouterLink } from 'react-router-dom';
 import { Box, Container, Typography, Stack, Link } from '@mui/material';
 
 const Footer = () => {
@@ -39,7 +40,8 @@ const Footer = () => {
               </Typography>
               <Stack spacing={0.5}>
                 <Link
-                  href="#home"
+                  component={RouterLink}
+                  to="/"
                   sx={{
                     color: 'text.secondary',
                     textDecoration: 'none',
@@ -51,7 +53,8 @@ const Footer = () => {
                   {t('nav.home')}
                 </Link>
                 <Link
-                  href="#services"
+                  component={RouterLink}
+                  to="/services"
                   sx={{
                     color: 'text.secondary',
                     textDecoration: 'none',
@@ -63,7 +66,8 @@ const Footer = () => {
                   {t('nav.services')}
                 </Link>
                 <Link
-                  href="#about"
+                  component={RouterLink}
+                  to="/#about"
                   sx={{
                     color: 'text.secondary',
                     textDecoration: 'none',
@@ -75,7 +79,8 @@ const Footer = () => {
                   {t('nav.about')}
                 </Link>
                 <Link
-                  href="#contact"
+                  component={RouterLink}
+                  to="/#contact"
                   sx={{
                     color: 'text.secondary',
                     textDecoration: 'none',

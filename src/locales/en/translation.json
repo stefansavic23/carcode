@@ -18,34 +18,45 @@
     "customization": "Customization",
     "customizationDesc": "Tailored to your needs"
   },
+  "featuredService": {
+    "label": "Our Services",
+    "title": "Vehicle Coding",
+    "description": "CarPlay/Android Auto activation, updating and unlocking new maps on multimedia, additional functions and personalization of your vehicle according to your needs.",
+    "button": "View Offer",
+    "imageAlt": "Vehicle Coding"
+  },
   "services": {
     "titlePrefix": "Our",
     "titleHighlight": "Services",
     "title": "Our Services",
     "subtitle": "Comprehensive car coding solutions tailored to enhance your vehicle's performance, efficiency, and functionality.",
-    "ecuRemapping": {
+    "navigation": {
       "title": "Navigation / Maps",
-      "description": "Professional engine control unit remapping to unlock hidden performance and optimize your vehicle's power output."
+      "description": "Activation and updates of navigation systems, unlocking new maps on multimedia, GPS configuration and navigation functions for optimal driving."
     },
-    "chipTuning": {
+    "multimedia": {
       "title": "Multimedia / Infotainment",
-      "description": "Advanced chip tuning services to enhance your car's performance, fuel efficiency, and driving experience."
+      "description": "CarPlay/Android Auto activation, audio system configuration, adding new multimedia features and infotainment system personalization."
     },
-    "customCoding": {
-      "title": "Virtual Boards / Views",
-      "description": "Tailored coding solutions for your specific vehicle model, including feature activation and customization."
+    "virtualDashboards": {
+      "title": "Virtual Dashboards / Displays",
+      "description": "Activation and configuration of virtual dashboards, digital displays, head-up display systems and advanced information panels."
     },
-    "securityUpdates": {
+    "lighting": {
       "title": "Lighting",
-      "description": "Keep your vehicle's software up-to-date with the latest security patches and performance improvements."
+      "description": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting."
     },
-    "diagnosticServices": {
-      "title": "Safety / Comfort",
-      "description": "Comprehensive diagnostic analysis to identify and resolve issues with your vehicle's electronic systems."
+    "security": {
+      "title": "Security",
+      "description": "Activation and configuration of security systems, parking sensors, cameras, alarm systems and advanced vehicle security features."
     },
-    "performanceAnalysis": {
+    "comfort": {
+      "title": "Comfort",
+      "description": "Climate control settings, memory seats, automatic windows, central locking and other comfort features for optimal driving experience."
+    },
+    "performance": {
       "title": "Engine / Performance",
-      "description": "Detailed performance analysis and optimization recommendations based on your driving patterns and needs."
+      "description": "ECU remapping, chip tuning, engine performance optimization, increased power and torque while maintaining vehicle reliability."
     }
   },
   "about": {

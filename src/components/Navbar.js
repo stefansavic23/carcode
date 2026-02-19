@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -19,11 +20,17 @@ import CloseIcon from '@mui/icons-material/Close';
 import LanguageSwitcher from './LanguageSwitcher';
 
 function ElevationScroll(props) {
-  const { children } = props;
+  const { children, position } = props;
+  
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
   });
+
+  // Only apply scroll effect if navbar is fixed
+  if (position !== 'fixed') {
+    return children;
+  }
 
   return React.cloneElement(children, {
     elevation: trigger ? 4 : 0,
@@ -35,7 +42,7 @@ function ElevationScroll(props) {
   });
 }
 
-const Navbar = () => {
+const Navbar = ({ position = 'fixed' }) => {
   const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -44,10 +51,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: t('nav.home'), href: '#home' },
-    { label: t('nav.services'), href: '#services' },
-    { label: t('nav.about'), href: '#about' },
-    { label: t('nav.contact'), href: '#contact' },
+    { label: t('nav.home'), href: '/' },
+    { label: t('nav.services'), href: '/services' },
+    { label: t('nav.about'), href: '/#about' },
+    { label: t('nav.contact'), href: '/#contact' },
   ];
 
   const drawer = (
@@ -89,7 +96,9 @@ const Navbar = () => {
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
             <ListItemButton
-              href={item.href}
+              component={item.href.startsWith('/') ? Link : 'a'}
+              to={item.href.startsWith('/') ? item.href : undefined}
+              href={item.href.startsWith('/') ? undefined : item.href}
               sx={{
                 textAlign: 'center',
                 '&:hover': {
@@ -107,16 +116,18 @@ const Navbar = () => {
 
   return (
     <>
-      <ElevationScroll>
-        <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
+      <ElevationScroll position={position}>
+        <AppBar position={position} sx={{ backgroundColor: position === 'static' ? 'background.default' : 'transparent' }}>
           <Toolbar sx={{ py: 1 }}>
             <Typography
               variant="h5"
-              component="div"
+              component={Link}
+              to="/"
               sx={{
                 flexGrow: { xs: 1, md: 0 },
                 fontWeight: 700,
                 mr: { md: 6 },
+                textDecoration: 'none',
               }}
             >
               <Box component="span" sx={{ color: 'secondary.main' }}>
@@ -130,7 +141,9 @@ const Navbar = () => {
               {navItems.map((item) => (
                 <Button
                   key={item.label}
-                  href={item.href}
+                  component={item.href.startsWith('/') ? Link : 'a'}
+                  to={item.href.startsWith('/') ? item.href : undefined}
+                  href={item.href.startsWith('/') ? undefined : item.href}
                   sx={{
                     color: 'secondary.main',
                     '&:hover': {

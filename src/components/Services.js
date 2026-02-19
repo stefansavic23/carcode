@@ -11,10 +11,11 @@ import {
 } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 import NavigationIcon from '@mui/icons-material/Navigation';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import AirplayIcon from '@mui/icons-material/Airplay';
+import RadioIcon from '@mui/icons-material/Radio';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ShieldIcon from '@mui/icons-material/Shield';
+import SpaIcon from '@mui/icons-material/Spa';
 import SpeedIcon from '@mui/icons-material/Speed';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -34,20 +35,22 @@ const AnimatedCard = styled(Card)(({ delay = 0, isVisible }) => ({
 }));
 
 const serviceKeys = [
-  'ecuRemapping',
-  'chipTuning',
-  'customCoding',
-  'securityUpdates',
-  'diagnosticServices',
-  'performanceAnalysis',
+  'navigation',
+  'multimedia',
+  'virtualDashboards',
+  'lighting',
+  'security',
+  'comfort',
+  'performance',
 ];
 
 const serviceIcons = [
   <NavigationIcon />,
-  <VideoLibraryIcon />,
-  <AirplayIcon />,
+  <RadioIcon />,
+  <DashboardIcon />,
   <LightbulbIcon />,
   <ShieldIcon />,
+  <SpaIcon />,
   <SpeedIcon />,
 ];
 

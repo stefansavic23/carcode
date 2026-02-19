@@ -18,34 +18,45 @@
     "customization": "Prilagođavanje",
     "customizationDesc": "Prilagođeno vašim potrebama"
   },
+  "featuredService": {
+    "label": "Naše usluge",
+    "title": "Kodiranje vozila",
+    "description": "Aktivacija CarPlay/Android Auto, ažuriranje i otključavanje novih mapa na multimediji, dodatne funkcije i personalizacija vašeg vozila prema vašim potrebama.",
+    "button": "Pogledaj ponudu",
+    "imageAlt": "Kodiranje vozila"
+  },
   "services": {
     "titlePrefix": "Naše",
     "titleHighlight": "usluge",
     "title": "Naše usluge",
     "subtitle": "Sveobuhvatna car coding rešenja prilagođena za poboljšanje performansi, efikasnosti i funkcionalnosti vašeg vozila.",
-    "ecuRemapping": {
+    "navigation": {
       "title": "Navigacija / Mape",
-      "description": "Profesionalno podešavanje upravljačke jedinice motora za otključavanje skrivenih performansi i optimizaciju snage vašeg vozila."
+      "description": "Aktivacija i ažuriranje navigacionih sistema, otključavanje novih mapa na multimediji, podešavanje GPS-a i navigacionih funkcija za optimalnu vožnju."
     },
-    "chipTuning": {
+    "multimedia": {
       "title": "Multimedija / Infotainment",
-      "description": "Napredne usluge chip tuninga za poboljšanje performansi, efikasnosti goriva i vožnje vašeg automobila."
+      "description": "Aktivacija CarPlay/Android Auto, podešavanje audio sistema, dodavanje novih funkcija na multimediji i personalizacija infotainment sistema."
     },
-    "customCoding": {
+    "virtualDashboards": {
       "title": "Virtuelne Table / Prikazi",
-      "description": "Prilagođena coding rešenja za vaš model vozila, uključujući aktivaciju funkcija i personalizaciju."
+      "description": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza, head-up display sistema i naprednih informacionih panela."
     },
-    "securityUpdates": {
+    "lighting": {
       "title": "Osvetljenje",
-      "description": "Održavajte softver vozila ažuriran uz najnovije bezbednosne zakrpe i poboljšanja performansi."
+      "description": "Ambijentalno osvetljenje, podešavanje svetala, aktivacija dinamičkih svetala, LED konfiguracije i personalizacija osvetljenja enterijera i eksterijera."
     },
-    "diagnosticServices": {
-      "title": "Bezbednost / Komfor",
-      "description": "Sveobuhvatna dijagnostička analiza za prepoznavanje i rešavanje problema sa elektronskim sistemima vašeg vozila."
+    "security": {
+      "title": "Bezbednost",
+      "description": "Aktivacija i podešavanje sistema bezbednosti, parking senzora, kamera, alarm sistema i naprednih bezbednosnih funkcija vozila."
     },
-    "performanceAnalysis": {
+    "comfort": {
+      "title": "Komfor",
+      "description": "Podešavanje klima sistema, sedišta sa memorijom, automatskih prozora, centralnog zaključavanja i drugih komfor funkcija za optimalnu vožnju."
+    },
+    "performance": {
       "title": "Motor / Performanse",
-      "description": "Detaljna analiza performansi i preporuke za optimizaciju na osnovu vaših vozačkih navika i potreba."
+      "description": "ECU remapping, chip tuning, optimizacija performansi motora, povećanje snage i obrtnog momenta uz očuvanje pouzdanosti vozila."
     }
   },
   "about": {
