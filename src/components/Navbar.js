@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -21,7 +21,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 function ElevationScroll(props) {
   const { children, position } = props;
-  
+
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
@@ -44,17 +44,32 @@ function ElevationScroll(props) {
 
 const Navbar = ({ position = 'fixed' }) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+    setMobileOpen(false);
+  };
+
+  const handleHashLinkClick = () => {
+    setMobileOpen(false);
+  };
+
   const navItems = [
-    { label: t('nav.home'), href: '/' },
-    { label: t('nav.services'), href: '/services' },
-    { label: t('nav.about'), href: '/#about' },
-    { label: t('nav.contact'), href: '/#contact' },
+    { label: t('nav.home'), href: '/', isHome: true },
+    { label: t('nav.services'), href: '/services', isHome: false },
+    { label: t('nav.about'), to: { pathname: '/', hash: 'about' }, isHash: true },
+    { label: t('nav.contact'), to: { pathname: '/', hash: 'contact' }, isHash: true },
   ];
 
   const drawer = (
@@ -76,10 +91,13 @@ const Navbar = ({ position = 'fixed' }) => {
       <Typography
         variant="h5"
         component="div"
+        onClick={handleHomeClick}
         sx={{
           flexGrow: 1,
           mb: 4,
           fontWeight: 700,
+          cursor: 'pointer',
+          '&:hover': { opacity: 0.9 },
         }}
       >
         <Box component="span" sx={{ color: 'secondary.main' }}>
@@ -94,13 +112,15 @@ const Navbar = ({ position = 'fixed' }) => {
       </Box>
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding>
+          <ListItem key={item.href || item.to?.hash} disablePadding>
             <ListItemButton
-              component={item.href.startsWith('/') ? Link : 'a'}
-              to={item.href.startsWith('/') ? item.href : undefined}
-              href={item.href.startsWith('/') ? undefined : item.href}
+              component={item.isHome ? 'div' : Link}
+              to={item.isHome ? undefined : (item.to || item.href)}
+              href={item.isHome ? undefined : (item.to ? undefined : item.href)}
+              onClick={item.isHome ? handleHomeClick : (item.isHash ? handleHashLinkClick : undefined)}
               sx={{
                 textAlign: 'center',
+                cursor: 'pointer',
                 '&:hover': {
                   backgroundColor: 'rgba(0, 206, 209, 0.1)',
                 },
@@ -121,13 +141,16 @@ const Navbar = ({ position = 'fixed' }) => {
           <Toolbar sx={{ py: 1 }}>
             <Typography
               variant="h5"
-              component={Link}
-              to="/"
+              component="div"
+              onClick={handleHomeClick}
               sx={{
                 flexGrow: { xs: 1, md: 0 },
                 fontWeight: 700,
                 mr: { md: 6 },
-                textDecoration: 'none',
+                cursor: 'pointer',
+                '&:hover': {
+                  opacity: 0.9,
+                },
               }}
             >
               <Box component="span" sx={{ color: 'secondary.main' }}>
@@ -139,21 +162,36 @@ const Navbar = ({ position = 'fixed' }) => {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, gap: 2 }}>
               {navItems.map((item) => (
-                <Button
-                  key={item.label}
-                  component={item.href.startsWith('/') ? Link : 'a'}
-                  to={item.href.startsWith('/') ? item.href : undefined}
-                  href={item.href.startsWith('/') ? undefined : item.href}
-                  sx={{
-                    color: 'secondary.main',
-                    '&:hover': {
-                      color: 'primary.main',
-                      backgroundColor: 'rgba(0, 206, 209, 0.1)',
-                    },
-                  }}
-                >
-                  {item.label}
-                </Button>
+                item.isHome ? (
+                  <Button
+                    key="home"
+                    onClick={handleHomeClick}
+                    sx={{
+                      color: 'secondary.main',
+                      '&:hover': {
+                        color: 'primary.main',
+                        backgroundColor: 'rgba(0, 206, 209, 0.1)',
+                      },
+                    }}
+                  >
+                    {item.label}
+                  </Button>
+                ) : (
+                  <Button
+                    key={item.to?.hash || item.href}
+                    component={Link}
+                    to={item.to || item.href}
+                    sx={{
+                      color: 'secondary.main',
+                      '&:hover': {
+                        color: 'primary.main',
+                        backgroundColor: 'rgba(0, 206, 209, 0.1)',
+                      },
+                    }}
+                  >
+                    {item.label}
+                  </Button>
+                )
               ))}
             </Box>
             <LanguageSwitcher />

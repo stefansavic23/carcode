@@ -44,6 +44,7 @@ const Contact = () => {
         py: { xs: 8, md: 12 },
         backgroundColor: 'background.default',
         position: 'relative',
+        scrollMarginTop: { xs: 56, sm: 64 },
       }}
     >
       <Container maxWidth="lg">

@@ -54,6 +54,7 @@ const Hero = () => {
       id="home"
       sx={{
         minHeight: '100vh',
+        scrollMarginTop: { xs: 56, sm: 64 },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

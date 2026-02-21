@@ -8,19 +8,25 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+const SCROLL_DELAY_MS = 150;
+
 const HomePage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
+    const hash = location.hash?.replace('#', '');
+    if (!hash) return;
+
+    const scrollToSection = () => {
+      const element = document.getElementById(hash);
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    }
-  }, [location]);
+    };
+
+    const timer = setTimeout(scrollToSection, SCROLL_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [location.pathname, location.hash]);
 
   return (
     <Box sx={{ backgroundColor: 'background.default', minHeight: '100vh' }}>
