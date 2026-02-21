@@ -45,6 +45,26 @@ const FeaturedService = () => {
       imageAlt: t('featuredService.imageAlt4', 'Osvjetljenje'),
       imagePosition: 'left',
     },
+    {
+      label: t('featuredService.label5', 'Naše usluge'),
+      title: t('featuredService.title5', 'Retrofiti i ugradnje'),
+      description: t('featuredService.description5', 'Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema.'),
+      buttonText: t('featuredService.button'),
+      buttonLink: '/services',
+      image: '/retrofit.jpeg',
+      imageAlt: t('featuredService.imageAlt5', 'Retrofiti i ugradnje'),
+      imagePosition: 'right',
+    },
+    {
+      label: t('featuredService.label6', 'Naše usluge'),
+      title: t('featuredService.title6', 'Konverzija sistema'),
+      description: t('featuredService.description6', 'Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema.'),
+      buttonText: t('featuredService.button'),
+      buttonLink: '/services',
+      image: '/system.jpeg',
+      imageAlt: t('featuredService.imageAlt6', 'Konverzija sistema'),
+      imagePosition: 'left',
+    }
   ];
 
   return (

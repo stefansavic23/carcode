@@ -35,7 +35,15 @@
     "label4": "Our Services",
     "title4": "Lighting",
     "description4": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting.",
-    "imageAlt4": "Lighting"
+    "imageAlt4": "Lighting",
+    "label5": "Our Services",
+    "title5": "Retrofits and installations",
+    "description5": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting.",
+    "imageAlt5": "Retrofits and installations",
+    "label6": "Our Services",
+    "title6": "System conversion",
+    "description6": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting.",
+    "imageAlt6": "System conversion"
   },
   "services": {
     "titlePrefix": "Our",
