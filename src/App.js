@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 
 const theme = createTheme({
   palette: {
@@ -68,6 +69,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
         </Routes>
       </Router>
     </ThemeProvider>

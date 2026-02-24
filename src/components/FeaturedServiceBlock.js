@@ -35,16 +35,17 @@ const AnimatedRight = styled(Box)(({ delay = 0 }) => ({
 /**
  * Reusable Featured Service block component.
  *
- * @param {string} label - Small uppercase label (e.g. "Naše usluge")
- * @param {string} title - Main title (e.g. "Kodiranje vozila")
- * @param {string} description - Description paragraph
- * @param {string} buttonText - Button label (e.g. "Pogledaj ponudu")
- * @param {string} buttonLink - Button URL (e.g. "/services")
- * @param {string} image - Image URL or path
- * @param {string} imageAlt - Image alt text
- * @param {'left'|'right'} imagePosition - Position of image ("left" or "right")
- * @param {object} sx - Additional MUI sx props for the wrapper
+ * @param {string} label 
+ * @param {string} title 
+ * @param {string} description 
+ * @param {string} buttonText 
+ * @param {string} buttonLink 
+ * @param {string} image 
+ * @param {string} imageAlt 
+ * @param {'left'|'right'} imagePosition 
+ * @param {object} sx 
  */
+
 const FeaturedServiceBlock = ({
   label,
   title,
