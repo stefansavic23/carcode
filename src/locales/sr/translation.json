@@ -24,10 +24,31 @@
     "description": "Aktivacija CarPlay/Android Auto, ažuriranje i otključavanje novih mapa na multimediji, dodatne funkcije i personalizacija vašeg vozila prema vašim potrebama.",
     "button": "Pogledaj ponudu",
     "imageAlt": "Kodiranje vozila",
+
     "label2": "Naše usluge",
     "title2": "Virtuelne Table",
-    "description2": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema.",
-    "imageAlt2": "Virtuelne table"
+    "description2": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema (HUD), uz potpunu integraciju sa navigacijom i asistentima u vožnji.",
+    "imageAlt2": "Virtuelne table",
+
+    "label3": "Naše usluge",
+    "title3": "Multimedija",
+    "description3": "Aktivacija CarPlay/Android Auto, nadogradnja fabričkih multimedija, podešavanje zvuka i prikaza, kao i integracija pametnih uređaja sa sistemom vozila.",
+    "imageAlt3": "Multimedija",
+
+    "label4": "Naše usluge",
+    "title4": "Osvjetljenje",
+    "description4": "Ambijentalno osvjetljenje, podešavanje LED i matrix svjetala, personalizacija boja i intenziteta, kao i aktivacija dinamičkih pokazivača pravca.",
+    "imageAlt4": "Osvjetljenje",
+
+    "label5": "Naše usluge",
+    "title5": "Retrofiti i ugradnje",
+    "description5": "Ugradnja fabričke OEM opreme: multimedije, virtuelne table, kamere, senzori, ambijentalno osvjetljenje i druga dodatna oprema u fabričkom izgledu.",
+    "imageAlt5": "Retrofiti i ugradnje",
+
+    "label6": "Naše usluge",
+    "title6": "Konverzija sistema",
+    "description6": "Konverzija vozila sa drugih tržišta (npr. USA) na EU standarde: milje u kilometre, radio frekvencije, jezik sistema, navigacione mape i ostale softverske postavke.",
+    "imageAlt6": "Konverzija sistema"
   },
   "services": {
     "titlePrefix": "Naše",
