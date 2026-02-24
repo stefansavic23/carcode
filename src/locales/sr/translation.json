@@ -122,5 +122,21 @@
     "quickLinks": "Brzi linkovi",
     "contact": "Kontakt",
     "rights": "Sva prava zadržana."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Često postavljana pitanja",
+    "subtitle": "Odgovori na najčešća pitanja o našim uslugama kodiranja, tuninga, osvjetljenja, konverzija i retrofita.",
+    "categoryGeneral": "Opšta pitanja",
+    "q1": "Šta je CARCODE i koje usluge nudite?",
+    "a1": "CARCODE nudi profesionalne usluge car codinga i ECU tuninga: aktivacija i podešavanje navigacije, multimedije, virtuelnih tabla, osvjetljenja, retrofite OEM opreme i konverziju sistema za vozila sa drugih tržišta. Pružamo i dijagnostiku i kodiranje prema vašim potrebama.",
+    "q2": "Gde se nalazite i kako da zakažem termin?",
+    "a2": "Nalazimo se na adresi Ravnogorska 7, Derventa. Termin možete zakažati putem telefona +387 66 066 444 ili emailom na info@carcode.com. Radimo po dogovoru kako bismo vam pružili individualnu pažnju.",
+    "q3": "Da li radite sa svim markama vozila?",
+    "a3": "Radimo sa većinom modernih marki vozila, uključujući VW grupu, BMW, Mercedes, Audi i druge. Kompatibilnost zavisi od konkretne usluge i godine proizvodnje. Kontaktirajte nas sa modelom i godinom vozila pa ćemo vam reći da li možemo pomoći.",
+    "q4": "Da li nudite mobilni servis ili moram doći na vašu lokaciju?",
+    "a4": "Usluge se uglavnom obavljaju na našoj lokaciji u Derventi, gde imamo potrebnu opremu i stabilno napajanje. Za pojedine usluge moguće je dogovoriti dolazak—kontaktirajte nas za detalje.",
+    "q5": "Kako da znam da li je moje vozilo kompatibilno sa uslugama?",
+    "a5": "Kompatibilnost zavisi od marke, modela, godine i opreme vozila. Pošaljite nam podatke o vozilu (marka, model, godina, VIN ako imate) i uslugu koja vas zanima, pa ćemo vam odgovoriti da li je moguće i šta tačno nudimo za vaš auto."
   }
 }

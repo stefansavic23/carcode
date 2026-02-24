@@ -117,5 +117,21 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions about our coding, tuning, lighting, conversion and retrofit services.",
+    "categoryGeneral": "General questions",
+    "q1": "What is CARCODE and what services do you offer?",
+    "a1": "CARCODE offers professional car coding and ECU tuning: activation and configuration of navigation, multimedia, virtual dashboards, lighting, OEM retrofits, and system conversion for vehicles from other markets. We also provide diagnostics and coding tailored to your needs.",
+    "q2": "Where are you located and how do I book an appointment?",
+    "a2": "We are located at Ravnogorska 7, Derventa. You can book by phone at +387 66 066 444 or by email at info@carcode.com. We work by appointment to give you individual attention.",
+    "q3": "Do you work with all car brands?",
+    "a3": "We work with most modern car brands, including VW Group, BMW, Mercedes, Audi and others. Compatibility depends on the specific service and year of manufacture. Contact us with your model and year and we will tell you if we can help.",
+    "q4": "Do you offer mobile service or do I need to come to your location?",
+    "a4": "Services are mainly carried out at our location in Derventa, where we have the necessary equipment and stable power supply. For some services we can arrange a visit—contact us for details.",
+    "q5": "How do I know if my vehicle is compatible with your services?",
+    "a5": "Compatibility depends on make, model, year and equipment. Send us your vehicle details (make, model, year, VIN if available) and the service you are interested in, and we will tell you what is possible and what we offer for your car."
   }
 }
