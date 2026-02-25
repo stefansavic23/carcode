@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Početna",
+    "about": "O nama",
     "services": "Usluge",
     "faq": "Česta pitanja",
     "contact": "Kontakt",
@@ -95,6 +96,15 @@
     "stat2Label": "Zadovoljstvo kupaca",
     "stat3Label": "Godina iskustva",
     "stat4Label": "Podrška dostupna"
+  },
+  "aboutPage": {
+    "label": "O NAMA",
+    "title": "Naša priča",
+    "intro": "Upoznajte Car Code Derventa — mjesto gdje tehnologija i performanse vozila dostižu novi nivo.",
+    "p1": "Car Code Derventa je specijalizovana firma za napredno kodiranje i unapređenje funkcija na vozilima, osnovana 2025. godine od strane Ognjena Tešendića sa jasnom vizijom — pružiti vozačima vrhunsku uslugu personalizacije i optimizacije automobila na profesionalnom nivou. Od samog početka fokus je stavljen na preciznost, sigurnost i kvalitet rada, zahvaljujući čemu je firma brzo stekla veliki broj zadovoljnih klijenata.",
+    "p2": "Vremenom smo proširili spektar usluga koji danas obuhvata napredno kodiranje modula, aktivaciju skrivenih funkcija, softverske nadogradnje sistema, optimizaciju performansi, kao i druge prilagodbe koje podižu komfor, sigurnost i funkcionalnost vozila.",
+    "p3": "Danas Car Code Derventa stoji kao pouzdan partner vozačima koji žele više od standardne opreme — uz veliki broj uspješno odrađenih vozila i stalno rastuću bazu zadovoljnih mušterija.",
+    "p4": ""
   },
   "contact": {
     "title": "Kontaktirajte nas",

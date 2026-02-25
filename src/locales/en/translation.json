@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "about": "About",
     "services": "Services",
     "faq": "FAQ",
     "contact": "Contact",
@@ -95,6 +96,15 @@
     "stat2Label": "Customer Satisfaction",
     "stat3Label": "Years Experience",
     "stat4Label": "Support Available"
+  },
+  "aboutPage": {
+    "label": "ABOUT US",
+    "title": "Our story",
+    "intro": "Meet Car Code Derventa — where vehicle technology and performance reach a new level.",
+    "p1": "Car Code Derventa is a specialized company for advanced coding and enhancement of vehicle functions, founded in 2025 by Ognjen Tešendić with a clear vision — to provide drivers with top-tier vehicle personalization and optimization services at a professional level. From the very beginning, the focus has been on precision, safety and quality of work, which is why the company quickly gained a large number of satisfied clients.",
+    "p2": "Over time we have expanded our range of services, which today includes advanced module coding, activation of hidden functions, software upgrades of systems, performance optimization, as well as other adjustments that enhance the comfort, safety and functionality of vehicles.",
+    "p3": "Today Car Code Derventa stands as a trusted partner for drivers who want more than standard equipment — with a large number of successfully completed vehicles and a steadily growing base of satisfied customers.",
+    "p4": ""
   },
   "contact": {
     "title": "Get In Touch",

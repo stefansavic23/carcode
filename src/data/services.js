@@ -8,7 +8,7 @@ export const services = [
     slug: 'virtual-table',
     title: 'Virtuelne Table',
     description: 'Virtuelne table (digitalne instrument table) zamjenjuju klasične analogne i pružaju potpuno digitalni prikaz brzine, obrtaja, navigacije i upozorenja. Nudimo aktivaciju fabričkih virtuelnih tabla, nadogradnju na digitalne kokpite te konfiguraciju i personalizaciju prikaza prema vašim željama. Usluga uključuje podršku za head-up display (HUD), različite teme prikaza i integraciju sa navigacijom i asistencijama u vožnji. Kompatibilno s većinom modernih modela (VW grupa, BMW, Mercedes, Audi).',
-    images: ['/virtual.jpg', '/virtual3.jpg', '/virtual2.jpg'].filter(Boolean),
+    images: ['/virtual.jpg', '/virtual3.jpeg', '/virtual2.jpg'].filter(Boolean),
   },
   {
     slug: 'multimedia',

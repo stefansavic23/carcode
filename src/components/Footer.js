@@ -67,6 +67,19 @@ const Footer = () => {
                 </Link>
                 <Link
                   component={RouterLink}
+                  to="/about"
+                  sx={{
+                    color: 'text.secondary',
+                    textDecoration: 'none',
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  {t('nav.about')}
+                </Link>
+                <Link
+                  component={RouterLink}
                   to="/#faq"
                   sx={{
                     color: 'text.secondary',
