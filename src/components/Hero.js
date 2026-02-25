@@ -243,7 +243,7 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  {t('hero.performance')}
+                  {t('hero.coding')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                   {t('hero.performanceDesc')}
@@ -262,7 +262,7 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  {t('hero.efficiency')}
+                  {t('hero.activation')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                   {t('hero.efficiencyDesc')}
@@ -281,7 +281,7 @@ const Hero = () => {
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
-                  {t('hero.customization')}
+                  {t('hero.retrofits')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                   {t('hero.customizationDesc')}
