@@ -106,7 +106,7 @@ const Footer = () => {
               </Typography>
               <Stack spacing={0.5}>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  info@carcode.com
+                  carcode.derv@gmail.com
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                   +387 66 066 444
