@@ -24,27 +24,22 @@
     "description": "Aktivacija CarPlay/Android Auto, ažuriranje i otključavanje novih mapa na multimediji, dodatne funkcije i personalizacija vašeg vozila prema vašim potrebama.",
     "button": "Pogledaj ponudu",
     "imageAlt": "Kodiranje vozila",
-
     "label2": "Naše usluge",
     "title2": "Virtuelne Table",
     "description2": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza i head-up display sistema (HUD), uz potpunu integraciju sa navigacijom i asistentima u vožnji.",
     "imageAlt2": "Virtuelne table",
-
     "label3": "Naše usluge",
     "title3": "Multimedija",
     "description3": "Aktivacija CarPlay/Android Auto, nadogradnja fabričkih multimedija, podešavanje zvuka i prikaza, kao i integracija pametnih uređaja sa sistemom vozila.",
     "imageAlt3": "Multimedija",
-
     "label4": "Naše usluge",
     "title4": "Osvjetljenje",
     "description4": "Ambijentalno osvjetljenje, podešavanje LED i matrix svjetala, personalizacija boja i intenziteta, kao i aktivacija dinamičkih pokazivača pravca.",
     "imageAlt4": "Osvjetljenje",
-
     "label5": "Naše usluge",
     "title5": "Retrofiti i ugradnje",
     "description5": "Ugradnja fabričke OEM opreme: multimedije, virtuelne table, kamere, senzori, ambijentalno osvjetljenje i druga dodatna oprema u fabričkom izgledu.",
     "imageAlt5": "Retrofiti i ugradnje",
-
     "label6": "Naše usluge",
     "title6": "Konverzija sistema",
     "description6": "Konverzija vozila sa drugih tržišta (npr. USA) na EU standarde: milje u kilometre, radio frekvencije, jezik sistema, navigacione mape i ostale softverske postavke.",
@@ -129,7 +124,7 @@
     "subtitle": "Odgovori na najčešća pitanja o našim uslugama kodiranja, tuninga, osvjetljenja, konverzija i retrofita.",
     "categoryGeneral": "Opšta pitanja",
     "q1": "Šta je CARCODE i koje usluge nudite?",
-    "a1": "CARCODE nudi profesionalne usluge car codinga i ECU tuninga: aktivacija i podešavanje navigacije, multimedije, virtuelnih tabla, osvjetljenja, retrofite OEM opreme i konverziju sistema za vozila sa drugih tržišta. Pružamo i dijagnostiku i kodiranje prema vašim potrebama.",
+    "a1": "Car Code Derventa je firma osnovana 2025. godine koja za cilj ima unaprijedjenje Vašeg vozila. Nudimo usluge kodiranja vozila, USA u EU konverziju i enterijerne retrofite. Od osnivanja smo odradili preko 150 automobila sa potpunim zadovoljstvom klijenata.",
     "q2": "Gde se nalazite i kako da zakažem termin?",
     "a2": "Nalazimo se na adresi Ravnogorska 7, Derventa. Termin možete zakažati putem telefona +387 66 066 444 ili emailom na info@carcode.com. Radimo po dogovoru kako bismo vam pružili individualnu pažnju.",
     "q3": "Da li radite sa svim markama vozila?",
