@@ -11,7 +11,7 @@ const FeaturedService = () => {
       description: t('featuredService.description'),
       buttonText: t('featuredService.button'),
       buttonLink: '/services',
-      image: '/bmw.jpeg',
+      image: '/bmwx6.jpeg',
       imageAlt: t('featuredService.imageAlt'),
       imagePosition: 'right',
     },
