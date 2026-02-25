@@ -4,8 +4,11 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 /**
- * Carousel gallery: jedna slika u sredini, strelice lijevo/desno za prelazak.
- * Možeš dodati 5+ slika u niz images.
+ * Carousel gallery: jedna slika/video u sredini, strelice lijevo/desno za prelazak.
+ * Možeš dodati 5+ stavki u niz images.
+ * Svaka stavka može biti:
+ *  - string (putanja do slike), ili
+ *  - objekt { type: 'video', src: '/file.mp4', poster?: '/thumb.jpg' }
  */
 const Gallery = ({ images = [] }) => {
   const [index, setIndex] = useState(0);
@@ -23,7 +26,10 @@ const Gallery = ({ images = [] }) => {
     setIndex((i) => (i + 1) % total);
   };
 
-  const src = images[index];
+  const current = images[index];
+  const isObject = current && typeof current === 'object';
+  const isVideo = isObject && current.type === 'video';
+  const src = isObject ? current.src : current;
 
   return (
     <Box
@@ -71,8 +77,20 @@ const Gallery = ({ images = [] }) => {
         >
           {imgError ? (
             <Box sx={{ color: 'text.secondary', py: 4, px: 2 }}>
-              Slika nije dostupna
+              Media nije dostupna
             </Box>
+          ) : isVideo ? (
+            <Box
+              component="video"
+              src={src}
+              poster={isObject ? current.poster : undefined}
+              autoPlay
+              muted
+              playsInline
+              loop
+              style={{ width: '100%', maxHeight: 420, display: 'block' }}
+              onError={() => setImgError(true)}
+            />
           ) : (
             <Box
               component="img"

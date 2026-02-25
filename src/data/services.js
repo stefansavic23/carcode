@@ -20,7 +20,11 @@ export const services = [
     slug: 'osvjetljenje',
     title: 'Osvjetljenje',
     description: 'Ambijentalno osvjetljenje enterijera, aktivacija i konfiguracija dinamičkih svjetala, LED nadogradnje te personalizacija boja i intenziteta. Uključuje podešavanje dnevnih i pozicijskih svjetala, nadogradnju na matrix/LED tehnologiju i integraciju s komfor i vizualnim postavkama vozila.',
-    images: ['/lighting.jpg', '/bmwx6.jpeg'].filter(Boolean),
+    images: [
+      { type: 'video', src: '/lighting.mp4' },
+      '/lighting.jpg'
+    ].filter(Boolean),
+
   },
   {
     slug: 'retrofit',
