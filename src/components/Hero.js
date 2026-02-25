@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
-import SpeedIcon from '@mui/icons-material/Speed';
+import CodeIcon from '@mui/icons-material/Code';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import BuildIcon from '@mui/icons-material/Build';
 
@@ -231,7 +231,7 @@ const Hero = () => {
               sx={{ mt: 6, width: '100%', maxWidth: '800px' }}
             >
               <AnimatedIconBox delay={1.0} sx={{ textAlign: 'center', flex: 1 }}>
-                <SpeedIcon
+                <CodeIcon
                   sx={{
                     fontSize: { xs: '2.5rem', md: '3rem' },
                     color: 'primary.main',
