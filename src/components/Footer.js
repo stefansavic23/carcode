@@ -67,7 +67,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   component={RouterLink}
-                  to="/#about"
+                  to="/#faq"
                   sx={{
                     color: 'text.secondary',
                     textDecoration: 'none',
@@ -76,7 +76,7 @@ const Footer = () => {
                     },
                   }}
                 >
-                  {t('nav.about')}
+                  {t('nav.faq')}
                 </Link>
                 <Link
                   component={RouterLink}

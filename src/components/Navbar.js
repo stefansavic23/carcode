@@ -68,7 +68,7 @@ const Navbar = ({ position = 'fixed' }) => {
   const navItems = [
     { label: t('nav.home'), href: '/', isHome: true },
     { label: t('nav.services'), href: '/services', isHome: false },
-    { label: t('nav.about'), to: { pathname: '/', hash: 'about' }, isHash: true },
+    { label: t('nav.faq'), to: { pathname: '/', hash: 'faq' }, isHash: true },
     { label: t('nav.contact'), to: { pathname: '/', hash: 'contact' }, isHash: true },
   ];
 

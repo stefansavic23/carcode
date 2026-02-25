@@ -5,7 +5,6 @@ import { Box } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FeaturedService from '../components/FeaturedService';
-import About from '../components/About';
 import Contact from '../components/Contact';
 import QandA from '../components/QandA';
 import Footer from '../components/Footer';
@@ -49,14 +48,13 @@ const HomePage = () => {
       <Navbar position="fixed" />
       <Hero />
       <FeaturedService />
-      <About />
-      <Contact />
       <QandA
         label={t('faq.label')}
         title={t('faq.title')}
         subtitle={t('faq.subtitle')}
         categories={faqCategoriesTranslated}
       />
+      <Contact />
       <Footer />
     </Box>
   );
