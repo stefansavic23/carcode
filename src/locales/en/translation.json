@@ -52,31 +52,33 @@
     "subtitle": "Comprehensive car coding solutions tailored to enhance your vehicle's performance, efficiency, and functionality.",
     "navigation": {
       "title": "Navigation / Maps",
-      "description": "Activation and updates of navigation systems, unlocking new maps on multimedia, GPS configuration and navigation functions for optimal driving."
+      "description": "New maps with radars and navigation on the dashboard",
+      "features": ["New maps 2025/26", "New maps with radars 2025/26", "Dashboard navigation 2025/26"]
     },
     "multimedia": {
       "title": "Multimedia / Infotainment",
-      "description": "CarPlay/Android Auto activation, audio system configuration, adding new multimedia features and infotainment system personalization."
+      "description": "Infotainment system improvements and startup animations",
+      "features": ["Video while driving", "Screen mirroring", "CarPlay activation", "CarPlay wireless", "CarPlay fullscreen", "Android Auto", "M on multimedia startup", "AMG on multimedia startup", "S or RS on multimedia startup", "Audi Sport on multimedia startup", "Alpina on multimedia startup", "R or R Line on multimedia startup", "AMG menu on dashboard", "Offroad menu", "AMG car design on multimedia", "Sports display"]
     },
     "virtualDashboards": {
       "title": "Virtual Dashboards / Displays",
-      "description": "Activation and configuration of virtual dashboards, digital displays, head-up display systems and advanced information panels."
+      "description": "Specialized dashboards and additional information on the instrument panel",
+      "features": ["RS dashboard", "S dashboard", "VRS dashboard", "AMG dashboard", "R dashboard", "M dashboard", "Alpina dashboard", "M sport dashboard", "Needle sweep", "Fuel quantity display", "Tyre temperature and pressure display", "Oil temperature display", "Digital speed on dashboard", "Laptimer"]
     },
     "lighting": {
       "title": "Lighting",
-      "description": "Ambient lighting, light configuration, dynamic light activation, LED setups and personalization of interior and exterior lighting."
+      "description": "Advanced vehicle lighting functions",
+      "features": ["RS animation on stop lights", "Automatic high beams", "Stop light flash on sudden braking", "One-click turn signal", "Rear lights and daytime"]
     },
-    "security": {
-      "title": "Security",
-      "description": "Activation and configuration of security systems, parking sensors, cameras, alarm systems and advanced vehicle security features."
-    },
-    "comfort": {
-      "title": "Comfort",
-      "description": "Climate control settings, memory seats, automatic windows, central locking and other comfort features for optimal driving experience."
+    "securityComfort": {
+      "title": "Security / Comfort",
+      "description": "Assistance, security functions and comfort options",
+      "features": ["LaneAssist activation", "LaneAssist memory or deactivation", "Seatbelt deactivation", "Close windows when rain starts", "Easy entry", "Seat heating/cooling balance", "Energizing comfort", "Locking while car is running"]
     },
     "performance": {
       "title": "Engine / Performance",
-      "description": "ECU remapping, chip tuning, engine performance optimization, increased power and torque while maintaining vehicle reliability."
+      "description": "Optimization of engine operation, performance and air suspension",
+      "features": ["Start/stop deactivation", "Fast throttle response", "Accelerometer", "Sport menu", "AMG track mode", "Lowering car on air suspension"]
     }
   },
   "about": {

@@ -52,31 +52,33 @@
     "subtitle": "Sveobuhvatna car coding rešenja prilagođena za poboljšanje performansi, efikasnosti i funkcionalnosti vašeg vozila.",
     "navigation": {
       "title": "Navigacija / Mape",
-      "description": "Aktivacija i ažuriranje navigacionih sistema, otključavanje novih mapa na multimediji, podešavanje GPS-a i navigacionih funkcija za optimalnu vožnju."
+      "description": "Nove mape sa radarima i navigacija na tabli",
+      "features": ["Nove mape 2025/26", "Nove mape sa radarima 2025/26", "Navigacija na tabli 2025/26"]
     },
     "multimedia": {
       "title": "Multimedija / Infotainment",
-      "description": "Aktivacija CarPlay/Android Auto, podešavanje audio sistema, dodavanje novih funkcija na multimediji i personalizacija infotainment sistema."
+      "description": "Poboljšanja za infotainment sistem i startup animacije",
+      "features": ["Video u vožnji", "Screen mirroring", "CarPlay aktivacija", "CarPlay wireless", "CarPlay fullscreen", "AndroidAuto", "M pri paljenju multimedije", "AMG pri paljenju multimedije", "S ili RS pri paljenju multimedije", "Audi Sport pri paljenju multimedije", "Alpina pri paljenju multimedije", "R ili R Line pri paljenju multimedije", "AMG menu na tabli", "Offroad menu", "AMG dizajn auta na multimediji", "Sportski display"]
     },
     "virtualDashboards": {
       "title": "Virtuelne Table / Prikazi",
-      "description": "Aktivacija i konfiguracija virtuelnih tabla, digitalnih prikaza, head-up display sistema i naprednih informacionih panela."
+      "description": "Specijalizovane table i dodatne informacije na instrument tabli",
+      "features": ["RS tabla", "S tabla", "VRS tabla", "AMG tabla", "R tabla", "M tabla", "Alpina tabla", "M sport tabla", "Punjenje kazaljki", "Prikaz količine goriva", "Prikaz temperature i pritiska u gumama", "Prikaz temperature ulja", "Prikaz digitalne brzine na tabli", "Laptimer"]
     },
     "lighting": {
       "title": "Osvetljenje",
-      "description": "Ambijentalno osvetljenje, podešavanje svetala, aktivacija dinamičkih svetala, LED konfiguracije i personalizacija osvetljenja enterijera i eksterijera."
+      "description": "Napredne funkcije osvetljenja vozila",
+      "features": ["RS animacija na štop svetlima", "Automatska duga svetla", "Blinkanje štopova pri naglom kočenju", "One click migavac", "Zadnja svetla i danju"]
     },
-    "security": {
-      "title": "Bezbednost",
-      "description": "Aktivacija i podešavanje sistema bezbednosti, parking senzora, kamera, alarm sistema i naprednih bezbednosnih funkcija vozila."
-    },
-    "comfort": {
-      "title": "Komfor",
-      "description": "Podešavanje klima sistema, sedišta sa memorijom, automatskih prozora, centralnog zaključavanja i drugih komfor funkcija za optimalnu vožnju."
+    "securityComfort": {
+      "title": "Bezbednost / Komfor",
+      "description": "Asistenčije, bezbednosne funkcije i komfor opcije",
+      "features": ["LaneAssist aktivacija", "LaneAssist memorija ili deaktivacija", "Gašenje pojasa", "Zatvaranje prozora kad krene kiša", "Easy entry", "Balans grejanja/hlađenja sedišta", "Energizing comfort", "Zaključavanje dok je auto upaljen"]
     },
     "performance": {
       "title": "Motor / Performanse",
-      "description": "ECU remapping, chip tuning, optimizacija performansi motora, povećanje snage i obrtnog momenta uz očuvanje pouzdanosti vozila."
+      "description": "Optimizacija rada motora, performansi i vazdušnog vešanja",
+      "features": ["Gašenje start/stop", "Brzi odziv papučice gasa", "Akselerometar", "Sport menu", "AMG track mode", "Spuštanje auta na vazdušnom vešanju"]
     }
   },
   "about": {

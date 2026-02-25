@@ -8,6 +8,7 @@ import {
   Card,
   CardContent,
   Stack,
+  Chip,
 } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 import NavigationIcon from '@mui/icons-material/Navigation';
@@ -15,9 +16,10 @@ import RadioIcon from '@mui/icons-material/Radio';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ShieldIcon from '@mui/icons-material/Shield';
-import SpaIcon from '@mui/icons-material/Spa';
 import SpeedIcon from '@mui/icons-material/Speed';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { featuresWithInfo } from '../data/serviceFeatures';
 
 const fadeInUp = keyframes`
   from {
@@ -39,8 +41,7 @@ const serviceKeys = [
   'multimedia',
   'virtualDashboards',
   'lighting',
-  'security',
-  'comfort',
+  'securityComfort',
   'performance',
 ];
 
@@ -50,7 +51,6 @@ const serviceIcons = [
   <DashboardIcon />,
   <LightbulbIcon />,
   <ShieldIcon />,
-  <SpaIcon />,
   <SpeedIcon />,
 ];
 
@@ -58,11 +58,17 @@ const Services = () => {
   const { t } = useTranslation();
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.1 });
 
-  const services = serviceKeys.map((key, index) => ({
+  const services = serviceKeys.map((key, index) => {
+    const features = t(`services.${key}.features`, { returnObjects: true });
+    const featuresList = Array.isArray(features) ? features : [];
+    const withInfo = featuresWithInfo[key] || [];
+    return {
     icon: serviceIcons[index],
     title: t(`services.${key}.title`),
     description: t(`services.${key}.description`),
-  }));
+    features: featuresList.map((text, i) => ({ text, info: withInfo[i] })),
+  };
+  });
 
   return (
     <Box
@@ -166,10 +172,37 @@ const Services = () => {
                     sx={{
                       color: 'text.secondary',
                       lineHeight: 1.7,
+                      mb: 2,
                     }}
                   >
                     {service.description}
                   </Typography>
+                  {service.features?.length > 0 && (
+                    <Stack direction="row" flexWrap="wrap" gap={1} useFlexGap>
+                      {service.features.map((item, i) => (
+                        <Chip
+                          key={i}
+                          label={
+                            <Box component="span" sx={{ display: 'inline-flex', alignItems: 'center', gap: 0.5 }}>
+                              {item.text}
+                              {item.info && (
+                                <InfoOutlinedIcon sx={{ fontSize: 14, opacity: 0.8 }} />
+                              )}
+                            </Box>
+                          }
+                          size="small"
+                          sx={{
+                            borderRadius: '9999px',
+                            backgroundColor: 'rgba(255,255,255,0.08)',
+                            color: 'text.secondary',
+                            fontWeight: 500,
+                            fontSize: { xs: '0.8rem', sm: '0.85rem' },
+                            '& .MuiChip-label': { px: 1.5, py: 0.75 },
+                          }}
+                        />
+                      ))}
+                    </Stack>
+                  )}
                 </CardContent>
               </AnimatedCard>
             </Grid>
