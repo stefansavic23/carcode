@@ -38,12 +38,6 @@ export const services = [
     description: 'Konverzija vozila iz drugih tržišta (npr. USA, Azija) na europske standarde: mijenjanje jedinica (milje/km), radio frekvencije, jezika sustava, navigacijskih mapa i svih postavki prema vašem tržištu. Nudimo i prilagodbu opreme i softvera za pravnu i tehničku usklađenost.',
     images: ['/system.jpeg', '/system2.jpeg'].filter(Boolean),
   },
-  {
-    slug: 'navigacija',
-    title: 'Navigacija',
-    description: 'Aktivacija i ažuriranje navigacionih sistema, otključavanje novih mapa na multimediji, podešavanje GPS-a i navigacionih funkcija za optimalnu vožnju.',
-    images: ['/bmwx6.jpeg'],
-  },
 ];
 
 const bySlug = services.reduce((acc, s) => ({ ...acc, [s.slug]: s }), {});

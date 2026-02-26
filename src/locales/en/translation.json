@@ -145,5 +145,23 @@
     "a4": "Services are mainly carried out at our location in Derventa, where we have the necessary equipment and stable power supply. For some services we can arrange a visit—contact us for details.",
     "q5": "How do I know if my vehicle is compatible with your services?",
     "a5": "Compatibility depends on make, model, year and equipment. Send us your vehicle details (make, model, year, VIN if available) and the service you are interested in, and we will tell you what is possible and what we offer for your car."
+  },
+  "reviews": {
+    "sectionLabel": "Client reviews",
+    "label": "Reviews",
+    "titlePrefix": "What our",
+    "titleHighlight": "clients say",
+    "date1": "April 15, 2025",
+    "title1": "Top-notch coding service",
+    "text1": "My car has never been set up better! Full recommendation for the Car Code team — professional and thorough.",
+    "date2": "May 2, 2025",
+    "title2": "Chip tuning changed everything",
+    "text2": "After chip tuning the car has much more power and consumption is even lower. Highly recommended!",
+    "date3": "July 21, 2025",
+    "title3": "Retrofits like factory fit",
+    "text3": "They installed a virtual dashboard and CarPlay — everything looks and works perfectly. Thanks for the advice and great service!",
+    "date4": "October 5, 2025",
+    "title4": "Coding exceeded expectations",
+    "text4": "The car pulls better and throttle response is great. Everything was explained and done professionally."
   }
 }

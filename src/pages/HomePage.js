@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import FeaturedService from '../components/FeaturedService';
 import Contact from '../components/Contact';
 import QandA from '../components/QandA';
+import ReviewsSection from '../components/ReviewsSection';
 import Footer from '../components/Footer';
 import { faqCategories } from '../data/faq';
 
@@ -54,6 +55,7 @@ const HomePage = () => {
         subtitle={t('faq.subtitle')}
         categories={faqCategoriesTranslated}
       />
+      <ReviewsSection />
       <Contact />
       <Footer />
     </Box>

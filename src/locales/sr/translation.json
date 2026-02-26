@@ -145,5 +145,23 @@
     "a4": "Usluge se uglavnom obavljaju na našoj lokaciji u Derventi, gde imamo potrebnu opremu i stabilno napajanje. Za pojedine usluge moguće je dogovoriti dolazak—kontaktirajte nas za detalje.",
     "q5": "Kako da znam da li je moje vozilo kompatibilno sa uslugama?",
     "a5": "Kompatibilnost zavisi od marke, modela, godine i opreme vozila. Pošaljite nam podatke o vozilu (marka, model, godina, VIN ako imate) i uslugu koja vas zanima, pa ćemo vam odgovoriti da li je moguće i šta tačno nudimo za vaš auto."
+  },
+  "reviews": {
+    "sectionLabel": "Recenzije klijenata",
+    "label": "Recenzije",
+    "titlePrefix": "Šta kažu naši",
+    "titleHighlight": "klijenti",
+    "date1": "15. april 2025.",
+    "title1": "Vrhunska usluga kodiranja",
+    "text1": "Auto mi nikada nije bio bolje podešen! Svaka preporuka za Car Code tim, profesionalni i pedantni.",
+    "date2": "2. maj 2025.",
+    "title2": "Chip tuning je promenio sve",
+    "text2": "Posle chip tuninga auto ima mnogo više snage, a potrošnja je čak i manja. Sve preporuke!",
+    "date3": "21. jul 2025.",
+    "title3": "Retrofiti kao da je iz fabricke opreme",
+    "text3": "Ugradili su mi virtuelnu tablu i CarPlay — sve izgleda i radi savršeno. Hvala na savetu i odličnoj usluzi!",
+    "date4": "5. oktobar 2025.",
+    "title4": "Kodiranje je prevazišlo očekivanja",
+    "text4": "Auto vuče bolje, odziv na gas je odličan. Sve je objašnjeno i urađeno profesionalno."
   }
 }
