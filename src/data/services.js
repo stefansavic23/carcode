@@ -14,7 +14,7 @@ export const services = [
     slug: 'multimedia',
     title: 'Multimedija',
     description: 'Aktivacija CarPlay i Android Auto, podešavanje fabričkih infotainment sistema, ugradnja i nadogradnja multimedijskih jedinica te personalizacija audio i video sadržaja. Nudimo ažuriranje softvera, otključavanje skrivenih funkcija i integraciju pametnih uređaja s vozilom. Kompatibilno s VW grupom, BMW, Mercedes, Audi i drugim markama.',
-    images: ['/multimedia.jpg', '/bmwx6.jpeg'].filter(Boolean),
+    images: ['/multimedia.jpg', '/multimedia2.jpg', '/multimedia3.jpg', '/multimedia4.jpg', '/multimedia5.jpg'].filter(Boolean),
   },
   {
     slug: 'osvjetljenje',
