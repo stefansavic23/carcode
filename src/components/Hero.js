@@ -20,18 +20,11 @@ const fadeInUp = keyframes`
 const fadeIn = keyframes`
   from {
     opacity: 0;
+    transform: translateY(18px) scale(0.96);
   }
   to {
     opacity: 1;
-  }
-`;
-
-const pulse = keyframes`
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    transform: translateY(0) scale(1);
   }
 `;
 
@@ -40,9 +33,10 @@ const AnimatedBox = styled(Box)(({ delay = 0 }) => ({
 }));
 
 const AnimatedIconBox = styled(Box)(({ delay = 0 }) => ({
-  animation: `${fadeIn} 0.6s ease-out ${delay}s both`,
+  animation: `${fadeIn} 0.7s ease-out ${delay}s both`,
+  transition: 'transform 0.25s ease',
   '&:hover': {
-    animation: `${pulse} 0.6s ease-in-out`,
+    transform: 'translateY(-6px)',
   },
 }));
 
@@ -236,10 +230,7 @@ const Hero = () => {
                     fontSize: { xs: '2.5rem', md: '3rem' },
                     color: 'primary.main',
                     mb: 1,
-                    transition: 'all 0.3s ease',
-                    '&:hover': {
-                      transform: 'scale(1.2) rotate(5deg)',
-                    },
+                    transition: 'transform 0.25s ease',
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
@@ -255,10 +246,7 @@ const Hero = () => {
                     fontSize: { xs: '2.5rem', md: '3rem' },
                     color: 'primary.main',
                     mb: 1,
-                    transition: 'all 0.3s ease',
-                    '&:hover': {
-                      transform: 'scale(1.2) rotate(-5deg)',
-                    },
+                    transition: 'transform 0.25s ease',
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
@@ -274,10 +262,7 @@ const Hero = () => {
                     fontSize: { xs: '2.5rem', md: '3rem' },
                     color: 'primary.main',
                     mb: 1,
-                    transition: 'all 0.3s ease',
-                    '&:hover': {
-                      transform: 'scale(1.2) rotate(5deg)',
-                    },
+                    transition: 'transform 0.25s ease',
                   }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 0.5 }}>
