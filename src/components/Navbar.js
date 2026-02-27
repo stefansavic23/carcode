@@ -17,7 +17,9 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import LanguageSwitcher from './LanguageSwitcher';
+import TikTokIcon from './icons/TikTokIcon';
 
 function ElevationScroll(props) {
   const { children, position } = props;
@@ -65,6 +67,11 @@ const Navbar = ({ position = 'fixed' }) => {
     setMobileOpen(false);
   };
 
+  const socialLinks = [
+    { href: 'https://www.instagram.com/carcode.derventa/', icon: <InstagramIcon />, label: 'Instagram' },
+    { href: 'https://www.tiktok.com/@carcode.derventa', icon: <TikTokIcon />, label: 'TikTok' },
+  ];
+
   const navItems = [
     { label: t('nav.home'), href: '/', isHome: true },
     { label: t('nav.about'), href: '/about', isHome: false },
@@ -110,6 +117,24 @@ const Navbar = ({ position = 'fixed' }) => {
       </Typography>
       <Box sx={{ mb: 2 }}>
         <LanguageSwitcher />
+      </Box>
+      <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, mb: 2 }}>
+        {socialLinks.map(({ href, icon, label }) => (
+          <IconButton
+            key={label}
+            component="a"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            sx={{
+              color: 'text.secondary',
+              '&:hover': { color: 'primary.main' },
+            }}
+          >
+            {React.cloneElement(icon, { sx: { fontSize: 24 } })}
+          </IconButton>
+        ))}
       </Box>
       <List>
         {navItems.map((item) => (
@@ -193,6 +218,25 @@ const Navbar = ({ position = 'fixed' }) => {
                     {item.label}
                   </Button>
                 )
+              ))}
+            </Box>
+            <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 0.5, mr: 2 }}>
+              {socialLinks.map(({ href, icon, label }) => (
+                <IconButton
+                  key={label}
+                  component="a"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  sx={{
+                    color: 'text.secondary',
+                    p: 0.75,
+                    '&:hover': { color: 'primary.main' },
+                  }}
+                >
+                  {React.cloneElement(icon, { sx: { fontSize: 22 } })}
+                </IconButton>
               ))}
             </Box>
             <LanguageSwitcher />
