@@ -9,7 +9,7 @@
   },
   "hero": {
     "tagline": "PROFESSIONAL CARCODING",
-    "headline": "Unlock your vehicle's true potential with professional ECU tuning and advanced car coding services. Experience enhanced performance, efficiency, and customization.",
+    "headline": "Unlock your vehicle's full potential with Car Code Derventa — a place where advanced technology, expertise and precision come together to make your car work better, look more stylish and deliver maximum performance.",
     "getStarted": "Get Started",
     "ourServices": "Our Services",
     "coding": "Coding",
@@ -54,32 +54,90 @@
     "navigation": {
       "title": "Navigation / Maps",
       "description": "New maps with radars and navigation on the dashboard",
-      "features": ["New maps 2025/26", "New maps with radars 2025/26", "Dashboard navigation 2025/26"]
+      "features": [
+        "New maps 2025/26",
+        "New maps with radars 2025/26",
+        "Dashboard navigation 2025/26"
+      ]
     },
     "multimedia": {
       "title": "Multimedia / Infotainment",
       "description": "Infotainment system improvements and startup animations",
-      "features": ["Video while driving", "Screen mirroring", "CarPlay activation", "CarPlay wireless", "CarPlay fullscreen", "Android Auto", "M on multimedia startup", "AMG on multimedia startup", "S or RS on multimedia startup", "Audi Sport on multimedia startup", "Alpina on multimedia startup", "R or R Line on multimedia startup", "AMG menu on dashboard", "Offroad menu", "AMG car design on multimedia", "Sports display"]
+      "features": [
+        "Video while driving",
+        "Screen mirroring",
+        "CarPlay activation",
+        "CarPlay wireless",
+        "CarPlay fullscreen",
+        "Android Auto",
+        "M on multimedia startup",
+        "AMG on multimedia startup",
+        "S or RS on multimedia startup",
+        "Audi Sport on multimedia startup",
+        "Alpina on multimedia startup",
+        "R or R Line on multimedia startup",
+        "AMG menu on dashboard",
+        "Offroad menu",
+        "AMG car design on multimedia",
+        "Sports display"
+      ]
     },
     "virtualDashboards": {
       "title": "Virtual Dashboards / Displays",
       "description": "Specialized dashboards and additional information on the instrument panel",
-      "features": ["RS dashboard", "S dashboard", "VRS dashboard", "AMG dashboard", "R dashboard", "M dashboard", "Alpina dashboard", "M sport dashboard", "Needle sweep", "Fuel quantity display", "Tyre temperature and pressure display", "Oil temperature display", "Digital speed on dashboard", "Laptimer"]
+      "features": [
+        "RS dashboard",
+        "S dashboard",
+        "VRS dashboard",
+        "AMG dashboard",
+        "R dashboard",
+        "M dashboard",
+        "Alpina dashboard",
+        "M sport dashboard",
+        "Needle sweep",
+        "Fuel quantity display",
+        "Tyre temperature and pressure display",
+        "Oil temperature display",
+        "Digital speed on dashboard",
+        "Laptimer"
+      ]
     },
     "lighting": {
       "title": "Lighting",
       "description": "Advanced vehicle lighting functions",
-      "features": ["RS animation on stop lights", "Automatic high beams", "Stop light flash on sudden braking", "One-click turn signal", "Rear lights and daytime"]
+      "features": [
+        "RS animation on stop lights",
+        "Automatic high beams",
+        "Stop light flash on sudden braking",
+        "One-click turn signal",
+        "Rear lights and daytime"
+      ]
     },
     "securityComfort": {
       "title": "Security / Comfort",
       "description": "Assistance, security functions and comfort options",
-      "features": ["LaneAssist activation", "LaneAssist memory or deactivation", "Seatbelt deactivation", "Close windows when rain starts", "Easy entry", "Seat heating/cooling balance", "Energizing comfort", "Locking while car is running"]
+      "features": [
+        "LaneAssist activation",
+        "LaneAssist memory or deactivation",
+        "Seatbelt deactivation",
+        "Close windows when rain starts",
+        "Easy entry",
+        "Seat heating/cooling balance",
+        "Energizing comfort",
+        "Locking while car is running"
+      ]
     },
     "performance": {
       "title": "Engine / Performance",
       "description": "Optimization of engine operation, performance and air suspension",
-      "features": ["Start/stop deactivation", "Fast throttle response", "Accelerometer", "Sport menu", "AMG track mode", "Lowering car on air suspension"]
+      "features": [
+        "Start/stop deactivation",
+        "Fast throttle response",
+        "Accelerometer",
+        "Sport menu",
+        "AMG track mode",
+        "Lowering car on air suspension"
+      ]
     }
   },
   "about": {
@@ -153,15 +211,15 @@
     "titleHighlight": "clients say",
     "date1": "April 15, 2025",
     "title1": "Top-notch coding service",
-    "text1": "My car has never been set up better! Full recommendation for the Car Code team — professional and thorough.",
+    "text1": "My car has never been tuned better! Any recommendation for the Car Code team - professional, fast and maximally precise.",
     "date2": "May 2, 2025",
-    "title2": "Chip tuning changed everything",
-    "text2": "After chip tuning the car has much more power and consumption is even lower. Highly recommended!",
+    "title2": "Everything works perfectly",
+    "text2": "After the coding service, the car has more options and everything works flawlessly. The team is friendly and professional - I recommend it to everyone!",
     "date3": "July 21, 2025",
-    "title3": "Retrofits like factory fit",
-    "text3": "They installed a virtual dashboard and CarPlay — everything looks and works perfectly. Thanks for the advice and great service!",
+    "title3": "As factory equipment",
+    "text3": "Built-in features look and work as if they came from the factory with the vehicle. Excellent communication and top service!",
     "date4": "October 5, 2025",
-    "title4": "Coding exceeded expectations",
-    "text4": "The car pulls better and throttle response is great. Everything was explained and done professionally."
+    "title4": "Exceeded expectations",
+    "text4": "Everything was done quickly, professionally and with a detailed explanation. The car now has options that I have wanted for a long time."
   }
 }

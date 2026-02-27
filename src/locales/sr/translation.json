@@ -9,7 +9,7 @@
   },
   "hero": {
     "tagline": "PROFESIONALNI CARCODING",
-    "headline": "Otključaj puni potencijal svog vozila uz profesionalno ECU podešavanje i napredne usluge car codinga. Oživi poboljšane performanse, efikasnost i personalizaciju.",
+    "headline": "Otključajte puni potencijal svog vozila uz Car Code Derventa — mjesto gdje se napredna tehnologija, stručnost i preciznost spajaju kako bi vaš automobil radio bolje, izgledao modernije i pružio maksimalne performanse.",
     "getStarted": "Počni",
     "ourServices": "Naše usluge",
     "coding": "Kodiranje",
@@ -54,32 +54,90 @@
     "navigation": {
       "title": "Navigacija / Mape",
       "description": "Nove mape sa radarima i navigacija na tabli",
-      "features": ["Nove mape 2025/26", "Nove mape sa radarima 2025/26", "Navigacija na tabli 2025/26"]
+      "features": [
+        "Nove mape 2025/26",
+        "Nove mape sa radarima 2025/26",
+        "Navigacija na tabli 2025/26"
+      ]
     },
     "multimedia": {
       "title": "Multimedija / Infotainment",
       "description": "Poboljšanja za infotainment sistem i startup animacije",
-      "features": ["Video u vožnji", "Screen mirroring", "CarPlay aktivacija", "CarPlay wireless", "CarPlay fullscreen", "AndroidAuto", "M pri paljenju multimedije", "AMG pri paljenju multimedije", "S ili RS pri paljenju multimedije", "Audi Sport pri paljenju multimedije", "Alpina pri paljenju multimedije", "R ili R Line pri paljenju multimedije", "AMG menu na tabli", "Offroad menu", "AMG dizajn auta na multimediji", "Sportski display"]
+      "features": [
+        "Video u vožnji",
+        "Screen mirroring",
+        "CarPlay aktivacija",
+        "CarPlay wireless",
+        "CarPlay fullscreen",
+        "AndroidAuto",
+        "M pri paljenju multimedije",
+        "AMG pri paljenju multimedije",
+        "S ili RS pri paljenju multimedije",
+        "Audi Sport pri paljenju multimedije",
+        "Alpina pri paljenju multimedije",
+        "R ili R Line pri paljenju multimedije",
+        "AMG menu na tabli",
+        "Offroad menu",
+        "AMG dizajn auta na multimediji",
+        "Sportski display"
+      ]
     },
     "virtualDashboards": {
       "title": "Virtuelne Table / Prikazi",
       "description": "Specijalizovane table i dodatne informacije na instrument tabli",
-      "features": ["RS tabla", "S tabla", "VRS tabla", "AMG tabla", "R tabla", "M tabla", "Alpina tabla", "M sport tabla", "Punjenje kazaljki", "Prikaz količine goriva", "Prikaz temperature i pritiska u gumama", "Prikaz temperature ulja", "Prikaz digitalne brzine na tabli", "Laptimer"]
+      "features": [
+        "RS tabla",
+        "S tabla",
+        "VRS tabla",
+        "AMG tabla",
+        "R tabla",
+        "M tabla",
+        "Alpina tabla",
+        "M sport tabla",
+        "Punjenje kazaljki",
+        "Prikaz količine goriva",
+        "Prikaz temperature i pritiska u gumama",
+        "Prikaz temperature ulja",
+        "Prikaz digitalne brzine na tabli",
+        "Laptimer"
+      ]
     },
     "lighting": {
       "title": "Osvetljenje",
       "description": "Napredne funkcije osvetljenja vozila",
-      "features": ["RS animacija na štop svetlima", "Automatska duga svetla", "Blinkanje štopova pri naglom kočenju", "One click migavac", "Zadnja svetla i danju"]
+      "features": [
+        "RS animacija na štop svetlima",
+        "Automatska duga svetla",
+        "Blinkanje štopova pri naglom kočenju",
+        "One click migavac",
+        "Zadnja svetla i danju"
+      ]
     },
     "securityComfort": {
       "title": "Bezbednost / Komfor",
       "description": "Asistenčije, bezbednosne funkcije i komfor opcije",
-      "features": ["LaneAssist aktivacija", "LaneAssist memorija ili deaktivacija", "Gašenje pojasa", "Zatvaranje prozora kad krene kiša", "Easy entry", "Balans grejanja/hlađenja sedišta", "Energizing comfort", "Zaključavanje dok je auto upaljen"]
+      "features": [
+        "LaneAssist aktivacija",
+        "LaneAssist memorija ili deaktivacija",
+        "Gašenje pojasa",
+        "Zatvaranje prozora kad krene kiša",
+        "Easy entry",
+        "Balans grejanja/hlađenja sedišta",
+        "Energizing comfort",
+        "Zaključavanje dok je auto upaljen"
+      ]
     },
     "performance": {
       "title": "Motor / Performanse",
       "description": "Optimizacija rada motora, performansi i vazdušnog vešanja",
-      "features": ["Gašenje start/stop", "Brzi odziv papučice gasa", "Akselerometar", "Sport menu", "AMG track mode", "Spuštanje auta na vazdušnom vešanju"]
+      "features": [
+        "Gašenje start/stop",
+        "Brzi odziv papučice gasa",
+        "Akselerometar",
+        "Sport menu",
+        "AMG track mode",
+        "Spuštanje auta na vazdušnom vešanju"
+      ]
     }
   },
   "about": {
@@ -153,15 +211,15 @@
     "titleHighlight": "klijenti",
     "date1": "15. april 2025.",
     "title1": "Vrhunska usluga kodiranja",
-    "text1": "Auto mi nikada nije bio bolje podešen! Svaka preporuka za Car Code tim, profesionalni i pedantni.",
+    "text1": "Auto mi nikada nije bio bolje podešen! Svaka preporuka za Car Code tim - profesionalni, brzi i maksimalno precizni.",
     "date2": "2. maj 2025.",
-    "title2": "Chip tuning je promenio sve",
-    "text2": "Posle chip tuninga auto ima mnogo više snage, a potrošnja je čak i manja. Sve preporuke!",
+    "title2": "Sve funkcionise savrseno",
+    "text2": "Nakon usluge kodiranja auto ima vise opcija i sve radi besprijekorno. Tim je ljubazan i strucan - preporucujem svima!",
     "date3": "21. jul 2025.",
-    "title3": "Retrofiti kao da je iz fabricke opreme",
-    "text3": "Ugradili su mi virtuelnu tablu i CarPlay — sve izgleda i radi savršeno. Hvala na savetu i odličnoj usluzi!",
+    "title3": "Kao fabricka oprema",
+    "text3": "Ugradjene funkcije izgledaju i rade kao da su fabricki dosle s vozilom. Odlicna komunikacija i vrhunska usluga!",
     "date4": "5. oktobar 2025.",
-    "title4": "Kodiranje je prevazišlo očekivanja",
-    "text4": "Auto vuče bolje, odziv na gas je odličan. Sve je objašnjeno i urađeno profesionalno."
+    "title4": "Prevazisli ocekivanja",
+    "text4": "Sve je uradjeno brzo, profesionalno i uz detaljno objasnjenje. Auto sada ima opcije koje sam dugo zelio."
   }
 }
