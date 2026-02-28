@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import QandA from '../components/QandA';
 import ReviewsSection from '../components/ReviewsSection';
 import Footer from '../components/Footer';
+import RevealSection from '../components/RevealSection';
 import { faqCategories } from '../data/faq';
 
 const SCROLL_DELAY_MS = 150;
@@ -49,14 +50,20 @@ const HomePage = () => {
       <Navbar position="fixed" />
       <Hero />
       <FeaturedService />
-      <QandA
-        label={t('faq.label')}
-        title={t('faq.title')}
-        subtitle={t('faq.subtitle')}
-        categories={faqCategoriesTranslated}
-      />
-      <ReviewsSection />
-      <Contact />
+      <RevealSection direction="bottom" threshold={0.06}>
+        <QandA
+          label={t('faq.label')}
+          title={t('faq.title')}
+          subtitle={t('faq.subtitle')}
+          categories={faqCategoriesTranslated}
+        />
+      </RevealSection>
+      <RevealSection direction="bottom" threshold={0.06} delay={0.05}>
+        <ReviewsSection />
+      </RevealSection>
+      <RevealSection direction="bottom" threshold={0.06} delay={0.05}>
+        <Contact />
+      </RevealSection>
       <Footer />
     </Box>
   );

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import FeaturedServiceBlock from './FeaturedServiceBlock';
+import RevealSection from './RevealSection';
 
 const FeaturedService = () => {
   const { t } = useTranslation();
@@ -70,7 +71,13 @@ const FeaturedService = () => {
   return (
     <>
       {services.map((service, index) => (
-        <FeaturedServiceBlock key={index} {...service} />
+        <RevealSection
+          key={index}
+          direction={index % 2 === 0 ? 'left' : 'right'}
+          delay={0}
+        >
+          <FeaturedServiceBlock {...service} />
+        </RevealSection>
       ))}
     </>
   );

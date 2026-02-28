@@ -1,51 +1,20 @@
 import { Link } from 'react-router-dom';
 import { Box, Container, Typography, Button, Grid } from '@mui/material';
-import { styled, keyframes } from '@mui/material/styles';
-
-const fadeInLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`;
-
-const fadeInRight = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`;
-
-const AnimatedLeft = styled(Box)(({ delay = 0 }) => ({
-  animation: `${fadeInLeft} 0.8s ease-out ${delay}s both`,
-}));
-
-const AnimatedRight = styled(Box)(({ delay = 0 }) => ({
-  animation: `${fadeInRight} 0.8s ease-out ${delay}s both`,
-}));
 
 /**
  * Reusable Featured Service block component.
+ * Use RevealSection in parent to animate on scroll.
  *
- * @param {string} label 
- * @param {string} title 
- * @param {string} description 
- * @param {string} buttonText 
- * @param {string} buttonLink 
- * @param {string} image 
- * @param {string} imageAlt 
- * @param {'left'|'right'} imagePosition 
- * @param {object} sx 
+ * @param {string} label
+ * @param {string} title
+ * @param {string} description
+ * @param {string} buttonText
+ * @param {string} buttonLink
+ * @param {string} image
+ * @param {string} imageAlt
+ * @param {'left'|'right'} imagePosition
+ * @param {object} sx
  */
-
 const FeaturedServiceBlock = ({
   label,
   title,
@@ -60,7 +29,7 @@ const FeaturedServiceBlock = ({
   const isImageRight = imagePosition === 'right';
 
   const contentBlock = (
-    <AnimatedLeft delay={0.2}>
+    <Box>
       {label && (
         <Typography
           variant="overline"
@@ -131,11 +100,11 @@ const FeaturedServiceBlock = ({
           {buttonText}
         </Button>
       )}
-    </AnimatedLeft>
+    </Box>
   );
 
   const imageBlock = image ? (
-    <AnimatedRight delay={0.4}>
+    <Box>
       <Box
         sx={{
           position: 'relative',
@@ -174,7 +143,7 @@ const FeaturedServiceBlock = ({
           }}
         />
       </Box>
-    </AnimatedRight>
+    </Box>
   ) : null;
 
   return (
