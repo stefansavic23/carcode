@@ -15,6 +15,7 @@ const FeaturedService = () => {
       image: '/s7.jpeg',
       imageAlt: t('featuredService.imageAlt'),
       imagePosition: 'right',
+      imageObjectPositionMobile: 'center 80%',
     },
     {
       label: t('featuredService.label2', 'Naše usluge'),

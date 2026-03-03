@@ -13,6 +13,7 @@ import { Box, Container, Typography, Button, Grid } from '@mui/material';
  * @param {string} image
  * @param {string} imageAlt
  * @param {'left'|'right'} imagePosition
+ * @param {string} imageObjectPositionMobile
  * @param {object} sx
  */
 const FeaturedServiceBlock = ({
@@ -24,6 +25,7 @@ const FeaturedServiceBlock = ({
   image,
   imageAlt = '',
   imagePosition = 'right',
+  imageObjectPositionMobile = 'center',
   sx = {},
 }) => {
   const isImageRight = imagePosition === 'right';
@@ -133,6 +135,7 @@ const FeaturedServiceBlock = ({
             height: { xs: 300, sm: 400, md: 500 },
             display: 'block',
             objectFit: 'cover',
+            objectPosition: { xs: imageObjectPositionMobile, sm: 'center' },
             borderRadius: { xs: 3, md: 4 },
           }}
           onError={(e) => {
