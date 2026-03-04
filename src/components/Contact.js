@@ -21,7 +21,7 @@ const Contact = () => {
       icon: <EmailIcon />,
       title: t('contact.email'),
       content: t('contact.emailValue'),
-      link: 'mailto:info@carcode.com',
+      link: 'carcode.derv@gmail.com',
     },
     {
       icon: <PhoneIcon />,
