@@ -98,7 +98,7 @@ const Hero = () => {
           zIndex: 0,
         }}
       >
-        <source src="/hero-bg.mp4" type="video/mp4" />
+        <source src="/merc.mp4" type="video/mp4" />
       </video>
       <Box
         sx={{
