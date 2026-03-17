@@ -4,7 +4,7 @@
     "about": "O nama",
     "services": "Usluge",
     "faq": "Česta pitanja",
-    "contact": "Kontakt",
+    "contact": "Zakazite termin",
     "openMenu": "Otvori meni"
   },
   "hero": {
@@ -165,7 +165,7 @@
     "p4": ""
   },
   "contact": {
-    "title": "Kontaktirajte nas",
+    "title": "Zakazite termin",
     "titleHighlight": "Touch",
     "subtitle": "Spremni da unapredite svoje vozilo? Kontaktirajte nas danas za konsultaciju i otkrijte kako možemo pomoći da otključate puni potencijal vašeg automobila.",
     "form": {
@@ -185,7 +185,7 @@
   },
   "footer": {
     "quickLinks": "Brzi linkovi",
-    "contact": "Kontakt",
+    "contact": "Zakazite termin",
     "rights": "Sva prava zadržana."
   },
   "faq": {

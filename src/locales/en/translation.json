@@ -4,7 +4,7 @@
     "about": "About",
     "services": "Services",
     "faq": "FAQ",
-    "contact": "Contact",
+    "contact": "Make an appointment",
     "openMenu": "Open menu"
   },
   "hero": {
@@ -165,7 +165,7 @@
     "p4": ""
   },
   "contact": {
-    "title": "Get In Touch",
+    "title": "Make an appointment",
     "titleHighlight": "Touch",
     "subtitle": "Ready to enhance your vehicle? Contact us today for a consultation and discover how we can help unlock your car's potential.",
     "form": {
@@ -185,7 +185,7 @@
   },
   "footer": {
     "quickLinks": "Quick Links",
-    "contact": "Contact",
+    "contact": "Make an appointment",
     "rights": "All rights reserved."
   },
   "faq": {
